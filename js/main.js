@@ -1,6 +1,6 @@
 /**
  * NEXO TECNOLOGIA — SCRIPTS OFICIAIS & INTERATIVIDADE
- * Atualizado com WhatsApp Oficial: (11) 97055-8412
+ * WhatsApp Oficial da Gestão da NEXO: (11) 97055-8412
  * Desenvolvido por NEXO Tecnologia (2026)
  */
 
@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ==========================================================================
-   1. ATENDIMENTO WHATSAPP EM TEMPO REAL COM HORÁRIO OFICIAL DO RICARDO
+   1. ATENDIMENTO WHATSAPP EM TEMPO REAL — GESTÃO DA NEXO TECNOLOGIA
    ========================================================================== */
 function initWhatsAppRealtimeStatus() {
   const config = {
-    numero: "5511970558412", // WhatsApp Oficial do Ricardo: (11) 97055-8412
+    numero: "5511970558412", // WhatsApp Oficial da Gestão da NEXO: (11) 97055-8412
     diasSemana: [1, 2, 3, 4, 5], // Seg a Sex
     horaInicio: 8,
     horaFim: 19,
@@ -50,16 +50,16 @@ function initWhatsAppRealtimeStatus() {
     if (isOnline) {
       dotEl.className = "wa-status-dot online";
       textEl.textContent = "Online Agora";
-      const msg = encodeURIComponent("Olá Ricardo! Estava navegando pelo site da NEXO Tecnologia e gostaria de agendar uma demonstração VIP.");
+      const msg = encodeURIComponent("Olá! Gostaria de falar com a gestão da NEXO Tecnologia sobre as soluções da plataforma.");
       linkEl.href = `https://wa.me/${config.numero}?text=${msg}`;
       if (headerStatusEl) {
-        headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Atendimento VIP Online`;
+        headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Atendimento VIP Online`;
       }
     } else {
       linkEl.classList.add("offline-mode");
       dotEl.className = "wa-status-dot offline";
       textEl.textContent = "Fora do Expediente";
-      const msg = encodeURIComponent("Olá Ricardo! Visitei o site da NEXO Tecnologia fora do horário comercial e gostaria de deixar uma mensagem para retorno prioritário.");
+      const msg = encodeURIComponent("Olá! Gostaria de deixar uma mensagem para a gestão da NEXO Tecnologia para retorno no primeiro horário.");
       linkEl.href = `https://wa.me/${config.numero}?text=${msg}`;
       if (headerStatusEl) {
         headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-amber-400"></span> Retorno Prioritário às 08h`;
@@ -131,7 +131,7 @@ function initEcosystemTabs() {
 }
 
 /* ==========================================================================
-   4. CALCULADORA DE GANHO DE PRODUTIVIDADE & VELOCIDADE (SEM EXPOR PREÇOS FIXOS)
+   4. CALCULADORA DE GANHO DE PRODUTIVIDADE & VELOCIDADE
    ========================================================================== */
 function initProductivityCalculator() {
   const usersInput = document.getElementById("calc-users");
@@ -153,16 +153,13 @@ function initProductivityCalculator() {
     usersDisplay.textContent = users === 1 ? "1 corretor/usuário" : `${users} corretores`;
     leadsDisplay.textContent = `${leads} leads/mês`;
 
-    // Média de 18 horas de digitação manual e retrabalho salvas por corretor/mês
     const hoursPerMonth = users * 18;
     const hoursPerYear = hoursPerMonth * 12;
 
-    // Estimativa de ganho em conversão com resposta imediata e simulador Caixa
     let boostPercent = 35;
     if (leads > 50) boostPercent = 48;
     if (leads > 120) boostPercent = 65;
 
-    // Tempo de resposta ao lead cai de 4 horas para segundos
     const timeSavedMin = "< 40 seg";
 
     if (hoursSavedDisplay) {
@@ -255,7 +252,7 @@ function initVipDemoModal() {
       const segmento = document.getElementById("modal-segmento")?.value || "Imobiliária / Corretor";
       const faturamento = document.getElementById("modal-tamanho")?.value || "Até 5 colaboradores";
 
-      const texto = `Olá Ricardo! Gostaria de agendar uma Demonstração VIP das soluções da NEXO Tecnologia:\n\n👤 *Nome:* ${nome}\n🏢 *Empresa:* ${empresa}\n🎯 *Segmento:* ${segmento}\n👥 *Equipe:* ${faturamento}\n\nPoderia me passar os próximos horários disponíveis?`;
+      const texto = `Olá! Gostaria de agendar uma Demonstração VIP com a gestão da NEXO Tecnologia:\n\n👤 *Nome:* ${nome}\n🏢 *Empresa:* ${empresa}\n🎯 *Segmento:* ${segmento}\n👥 *Equipe:* ${faturamento}\n\nPoderia me passar os próximos horários disponíveis?`;
 
       const encoded = encodeURIComponent(texto);
       window.open(`https://wa.me/5511970558412?text=${encoded}`, "_blank");
@@ -274,10 +271,10 @@ function initHeaderScrollEffect() {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 40) {
       header.classList.add("shadow-2xl", "border-b", "border-white/10", "bg-[#090C14]/95");
-      header.classList.remove("bg-[#090C14]/80");
+      header.classList.remove("bg-[#090C14]/90");
     } else {
       header.classList.remove("shadow-2xl");
-      header.classList.add("bg-[#090C14]/80");
+      header.classList.add("bg-[#090C14]/90");
     }
   });
 }

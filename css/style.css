@@ -147,6 +147,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 26px var(--color-nexo-orange-glow);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn-nexo-primary:hover {
@@ -170,6 +171,7 @@ body {
   transition: all var(--transition-fast);
   border: 1px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn-nexo-outline:hover {
