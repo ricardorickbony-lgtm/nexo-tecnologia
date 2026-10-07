@@ -1,6 +1,6 @@
 # NEXO Tecnologia — Site Oficial de Ultra Luxo (2026)
 
-> **Engenharia:** Quiet Luxury, Digital Lobby & Cores Oficiais NEXO (Azul Cobalto & Laranja Vibrante)  
+> **Domínio Oficial no Ar:** [https://nexotecnologia.app.br](https://nexotecnologia.app.br)  
 > **Workspace Oficial:** `C:\Users\ricar\OneDrive\Documentos\Projetos\nexo-tecnologia`  
 > **Atalho Desktop:** `C:\Users\ricar\OneDrive\Área de Trabalho\NEXO Tecnologia.lnk`  
 > **Repositório GitHub:** `https://github.com/ricardorickbony-lgtm/nexo-tecnologia.git`  
