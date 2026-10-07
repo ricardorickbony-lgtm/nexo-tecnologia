@@ -323,6 +323,7 @@ function initCookieConsentManager() {
   }
 
   function hideBanner() {
+    document.body.classList.remove("cookie-banner-active");
     if (banner) {
       banner.classList.remove("banner-visible");
       setTimeout(() => {
@@ -332,6 +333,7 @@ function initCookieConsentManager() {
   }
 
   function showBanner() {
+    document.body.classList.add("cookie-banner-active");
     if (banner) {
       banner.classList.remove("hidden");
       // Pequeno timeout para disparo da animação fluida
