@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXO Tecnologia — Engenharia de Software & Ecossistemas Digitais de Ultra Luxo</title>
+  <meta name="description" content="Boutique de tecnologia e inteligência artificial de alto padrão. Criamos o NEXO CRM Imobiliário, sites de ultra luxo internacional e automações corporativas de alta conversão.">
+  <meta name="keywords" content="NEXO Tecnologia, CRM Imobiliário, Sites de Ultra Luxo, Automação IA, Ricardo Severino, Software Imobiliário, Santo André">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXO Tecnologia — Software & Ecossistemas Digitais de Ultra Luxo">
+  <meta property="og:description" content="Engenharia de software, CRM imobiliário com portabilidade em 1 clique e portais digitais padrão internacional 2026.">
+  <meta property="og:image" content="assets/images/nexo-logo-horizontal.png">
+  <meta property="og:url" content="https://github.com/ricardorickbony-lgtm/nexo-tecnologia">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            solar: {
+              300: '#FFF066',
+              400: '#FFE600',
+              500: '#FACC15',
+              600: '#EAB308'
+            },
+            obsidian: {
+              700: '#1F2433',
+              800: '#131622',
+              850: '#0E1017',
+              900: '#090A0F',
+              950: '#050608'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Playfair Display & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Estilos Customizados de Ultra Luxo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#090A0F] text-white antialiased selection:bg-[#FFE600] selection:text-black">
+
+  <!-- ========================================================================= -->
+  <!-- 0. BARRA SUPERIOR SOLAR DE ACENTO EXECUTIVO (BRAND CONTRAST & CONTATOS)    -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Aviso Corporativo" class="bg-[#FFE600] text-slate-950 px-4 sm:px-8 py-2 text-xs font-bold tracking-wide border-b border-yellow-500/30 relative z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-slate-950"></span>
+          <span class="tracking-wider uppercase">NEXO Tecnologia • Padrão Ricardo & Severino</span>
+        </span>
+        <span class="hidden md:inline text-slate-800">•</span>
+        <span id="header-wa-status" class="hidden md:inline-flex items-center gap-1.5 font-extrabold text-slate-900">
+          <span class="w-2 h-2 rounded-full bg-emerald-700 animate-pulse"></span> Atendimento VIP Online
+        </span>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs sm:text-sm font-black ml-auto sm:ml-0">
+        <a href="https://wa.me/5511914879393?text=Ol%C3%A1%20Ricardo!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20NEXO%20Tecnologia." target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:opacity-80 transition" title="WhatsApp Corporativo Direto">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>(11) 91487-9393</span>
+        </a>
+        <a href="dossie.html" class="hidden sm:inline-flex items-center gap-1.5 bg-slate-950 text-[#FFE600] px-3 py-1 rounded-full hover:bg-black transition">
+          <span>📄 Dossiê Executivo</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HEADER OBSIDIAN AÉREO COM MÁXIMO CONTRASTE DA MARCA                    -->
+  <!-- ========================================================================= -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#090A0F]/85 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-24">
+        
+        <!-- Logotipo Oficial NEXO Tecnologia -->
+        <a href="index.html" class="flex items-center gap-3 shrink-0 group py-1" aria-label="NEXO Tecnologia Home">
+          <img 
+            src="assets/images/nexo-logo-horizontal.png" 
+            alt="NEXO Tecnologia" 
+            class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            onerror="this.style.display='none'; document.getElementById('fallback-logo-brand').style.display='flex';"
+          >
+          <div id="fallback-logo-brand" style="display:none;" class="items-center gap-2">
+            <span class="w-9 h-9 rounded-xl bg-[#FFE600] text-slate-950 font-black flex items-center justify-center text-xl shadow-lg">N</span>
+            <div class="flex flex-col">
+              <span class="font-extrabold text-lg tracking-wider text-white">NEXO</span>
+              <span class="text-[10px] tracking-widest text-[#FFE600] font-bold uppercase -mt-1">TECNOLOGIA</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Menu Hiper-Espaçado Desktop -->
+        <nav class="hidden lg:flex items-center gap-8 xl:gap-10 text-[14px] font-semibold tracking-wide text-white/90">
+          <a href="#solucoes" class="hover:text-[#FFE600] transition-colors py-2">Ecossistema</a>
+          <a href="#nexo-crm" class="hover:text-[#FFE600] transition-colors py-2 flex items-center gap-1.5">
+            <span>NEXO CRM</span>
+            <span class="bg-[#FFE600]/20 text-[#FFE600] text-[10px] font-extrabold px-1.5 py-0.5 rounded border border-[#FFE600]/40">SaaS</span>
+          </a>
+          <a href="#sites-luxo" class="hover:text-[#FFE600] transition-colors py-2">Sites de Ultra Luxo</a>
+          <a href="#automacao-ia" class="hover:text-[#FFE600] transition-colors py-2">Automações IA</a>
+          <a href="#calculadora" class="hover:text-[#FFE600] transition-colors py-2">Calculadora ROI</a>
+          <a href="#planos" class="hover:text-[#FFE600] transition-colors py-2">Planos</a>
+          <a href="#faq" class="hover:text-[#FFE600] transition-colors py-2">Dúvidas</a>
+        </nav>
+
+        <!-- Ações do Cabeçalho -->
+        <div class="hidden sm:flex items-center gap-4">
+          <button class="open-demo-modal btn-solar text-xs sm:text-sm py-2.5 px-6 shadow-md hover:shadow-yellow-500/20">
+            <span>Agendar Apresentação VIP</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </button>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-toggle" aria-label="Abrir Menu" class="lg:hidden p-2 text-white hover:text-[#FFE600] transition">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- DRAWER MOBILE DE NAVEGAÇÃO                                                -->
+  <!-- ========================================================================= -->
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden transition-opacity"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-[#0C0E14] border-l border-white/10 z-50 translate-x-full transition-transform duration-300 flex flex-col p-6 shadow-2xl">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center text-lg">N</span>
+        <span class="font-extrabold text-white text-lg tracking-wider">NEXO TECNOLOGIA</span>
+      </div>
+      <button id="mobile-menu-close" aria-label="Fechar Menu" class="p-2 text-white/70 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-4 py-8 text-base font-semibold">
+      <a href="#solucoes" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Ecossistema Completo</a>
+      <a href="#nexo-crm" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">NEXO CRM Imobiliário</a>
+      <a href="#sites-luxo" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Sites de Ultra Luxo</a>
+      <a href="#automacao-ia" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Automações com IA</a>
+      <a href="#calculadora" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Calculadora de ROI</a>
+      <a href="#planos" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Planos & Investimento</a>
+      <a href="#faq" class="mobile-nav-link text-white/90 hover:text-[#FFE600] transition">Perguntas Frequentes</a>
+      <a href="dossie.html" class="mobile-nav-link text-[#FFE600] font-bold">Dossiê Executivo Oficial ➔</a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+      <button class="open-demo-modal btn-solar w-full text-center py-3 text-sm">
+        Solicitar Demonstração VIP
+      </button>
+      <a href="https://wa.me/5511914879393" target="_blank" rel="noopener noreferrer" class="btn-obsidian-outline w-full text-center py-3 text-sm">
+        Conversar no WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO SECTION CINEMATOGRÁFICA (DIGITAL LOBBY & VÍDEO HERO CONTÍNUO)     -->
+  <!-- ========================================================================= -->
+  <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden border-b border-white/10">
+    
+    <!-- Vídeo Background Cinematográfico de Alta Definição -->
+    <div class="absolute inset-0 w-full h-full pointer-events-none overflow-hidden z-0">
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        preload="auto"
+        poster="assets/images/mansao-video-poster.jpg" 
+        class="w-full h-full object-cover object-center scale-105 filter brightness-90 contrast-105"
+      >
+        <source src="assets/videos/mansao-luxo.mp4" type="video/mp4">
+      </video>
+      <!-- Película de Scrim & Gradiente Obsidian Nobre -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#090A0F] via-[#090A0F]/85 to-[#090A0F]/70"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,230,0,0.06)_0%,transparent_70%)]"></div>
+    </div>
+
+    <!-- Conteúdo do Hero -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      
+      <!-- Eyebrow Badge Nobre -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md mb-8 animate-float">
+        <span class="w-2 h-2 rounded-full bg-[#FFE600] animate-ping"></span>
+        <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+          BOUTIQUE DE TECNOLOGIA & SAAS • PADRÃO 2026
+        </span>
+      </div>
+
+      <!-- Headline Monumental Editorial -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+        Engenharia de Software, IA e Soluções Digitais de <span class="text-gradient-gold font-serif-luxury italic font-normal">Ultra Luxo.</span>
+      </h1>
+
+      <!-- Lead Parágrafo Persuasivo -->
+      <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed mb-10">
+        Transformamos imobiliárias de alto padrão, marcas de prestígio e operações comerciais com tecnologia proprietária: <strong class="text-white font-semibold">NEXO CRM com portabilidade em 1 clique</strong>, portais na estética <em class="text-[#FFE600] not-italic font-semibold">Quiet Luxury</em> e automações inteligentes com inteligência artificial.
+      </p>
+
+      <!-- CTAs Duplos de Alta Conversão -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16">
+        <button class="open-demo-modal btn-solar text-sm sm:text-base py-4 px-8 w-full sm:w-auto shadow-2xl">
+          <span>Agendar Apresentação & 4 Dias Grátis</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+        <a href="#solucoes" class="btn-obsidian-outline text-sm sm:text-base py-4 px-8 w-full sm:w-auto">
+          <span>Conhecer o Ecossistema</span>
+          <svg class="w-5 h-5 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+      </div>
+
+      <!-- Live Performance Strip (Métricas Vivas de Engenharia) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6 border-t border-white/10 text-left">
+        <div class="p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl sm:text-3xl font-black text-[#FFE600] font-mono-tech">&lt; 0.8s</div>
+          <div class="text-xs sm:text-sm text-slate-400 font-medium">Velocidade de Carregamento</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono-tech">1 Clique</div>
+          <div class="text-xs sm:text-sm text-slate-400 font-medium">Portabilidade XML & Planilhas</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl sm:text-3xl font-black text-emerald-400 font-mono-tech">99.98%</div>
+          <div class="text-xs sm:text-sm text-slate-400 font-medium">Uptime em Nuvem High-End</div>
+        </div>
+        <div class="p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+          <div class="text-2xl sm:text-3xl font-black text-[#FFE600] font-mono-tech">+40%</div>
+          <div class="text-xs sm:text-sm text-slate-400 font-medium">Conversão Direta WhatsApp</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. ECOSSISTEMA NEXO TECNOLOGIA (INTERACTIVE TABS & SHOWCASE)              -->
+  <!-- ========================================================================= -->
+  <section id="solucoes" class="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+        ARQUITETURA COMPLETA
+      </span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 mb-6">
+        Os Três Pilares do <span class="text-gradient-gold">Ecossistema NEXO</span>
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg">
+        Eliminamos a fragmentação. Nossa engenharia unifica gestão de clientes, vitrine digital de ultra luxo e inteligência de dados em uma arquitetura integrada e veloz.
+      </p>
+
+      <!-- Botões de Alternância das Abas -->
+      <div class="flex items-center justify-center gap-2 sm:gap-4 mt-10 p-1.5 bg-white/5 rounded-full border border-white/10 max-w-xl mx-auto overflow-x-auto">
+        <button class="tab-btn active" data-target="tab-crm">NEXO CRM</button>
+        <button class="tab-btn" data-target="tab-sites">Sites de Ultra Luxo</button>
+        <button class="tab-btn" data-target="tab-ia">Automações & IA</button>
+      </div>
+    </div>
+
+    <!-- PAINEL 1: NEXO CRM ENTERPRISE & REAL ESTATE -->
+    <div id="tab-crm" class="tab-panel block">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600]/10 border border-[#FFE600]/30 text-[#FFE600] text-xs font-bold font-mono-tech">
+            <span>SaaS IMOBILIÁRIO & COMERCIAL</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            NEXO CRM: A Plataforma que Liberta Sua Imobiliária dos Sistemas Lentos
+          </h3>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Chega de pagar mensalidades abusivas para softwares pesados que travam no celular e prendem você em contratos intermináveis. O NEXO CRM foi projetado para velocidade instantânea e fechamento rápido.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Portabilidade Instantânea em 1 Clique</strong>
+                <span class="text-slate-400 text-sm">Importe toda a sua carteira antiga do Zap, VivaReal ou planilhas com fotos em alta resolução sem redigitar nada.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Simulador de Financiamento Caixa Integrado</strong>
+                <span class="text-slate-400 text-sm">O cliente simula entrada, prazos e parcelas diretamente na tela do seu site antes de acionar o corretor.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Kanban Comercial & Roleta Inteligente de Leads</strong>
+                <span class="text-slate-400 text-sm">Distribua leads automaticamente para a equipe no WhatsApp com mensagens pré-configuradas e histórico em tempo real.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">PWA Instalável no iPhone & Android</strong>
+                <span class="text-slate-400 text-sm">Funciona no celular de cada corretor com ícone nativo sem burocracia de App Store ou Google Play.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <button class="open-demo-modal btn-solar text-sm py-3 px-6">
+              Testar NEXO CRM por 4 Dias Grátis
+            </button>
+            <a href="https://ricardorickbony-lgtm.github.io/rico-ricardo-imoveis/" target="_blank" rel="noopener noreferrer" class="btn-obsidian-outline text-sm py-3 px-6">
+              Ver Demo Online em Operação ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <!-- Mockup Interativo do Painel NEXO CRM -->
+          <div class="rounded-3xl p-6 glass-obsidian-card relative overflow-hidden border border-white/10 shadow-2xl">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs font-mono-tech text-slate-400">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                <span class="ml-2 font-bold text-white">nexo.app/crm-master</span>
+              </div>
+              <span class="text-[#FFE600] font-bold">CLUSTER PRIVADO ATIVO</span>
+            </div>
+
+            <div class="mt-6 space-y-4">
+              <!-- Cards Kanban Demonstrativos -->
+              <div class="grid grid-cols-3 gap-3 text-center text-xs font-bold uppercase tracking-wider mb-2">
+                <div class="bg-blue-500/10 text-blue-400 py-1.5 rounded-lg border border-blue-500/20">Novos Leads (14)</div>
+                <div class="bg-amber-500/10 text-amber-400 py-1.5 rounded-lg border border-amber-500/20">Em Visita (8)</div>
+                <div class="bg-emerald-500/10 text-emerald-400 py-1.5 rounded-lg border border-emerald-500/20">Fechados (R$ 4.2M)</div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-bold text-white">Mansão Alphaville 01 • R$ 3.850.000</div>
+                  <div class="text-xs text-slate-400">Lead: Dr. Marcelo Tavares • WhatsApp Direto</div>
+                </div>
+                <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">
+                  Simulação Aprovada
+                </span>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-bold text-white">Cobertura Duplex Bairro Jardim • R$ 1.950.000</div>
+                  <div class="text-xs text-slate-400">Lead: Camila Nogueira • Caixa Econômica</div>
+                </div>
+                <span class="bg-[#FFE600]/20 text-[#FFE600] text-xs font-bold px-2.5 py-1 rounded-full border border-[#FFE600]/30">
+                  Visita Agendada
+                </span>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-bold text-white">Sobrado de Luxo Parque Marajoara • R$ 980.000</div>
+                  <div class="text-xs text-slate-400">Portabilidade: Importado via XML Zap em 42 seg</div>
+                </div>
+                <span class="bg-blue-500/20 text-blue-300 text-xs font-bold px-2.5 py-1 rounded-full border border-blue-500/30">
+                  Disponível
+                </span>
+              </div>
+            </div>
+
+            <!-- Rodapé do Mockup -->
+            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+              <span>Sincronização Asaas PIX/Cartão ativa</span>
+              <span class="text-emerald-400 font-bold">100% Autônomo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PAINEL 2: SITES DE ULTRA LUXO INTERNACIONAL 2026 -->
+    <div id="tab-sites" class="tab-panel hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600]/10 border border-[#FFE600]/30 text-[#FFE600] text-xs font-bold font-mono-tech">
+            <span>STUDIO DE ARQUITETURA WEB & QUIET LUXURY</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            Portais Digitais Inspirados no Padrão Awwwards, Milão & Nova York
+          </h3>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Seus clientes de alto poder aquisitivo não compram em sites genéricos com layout quebrado ou carregamento arrastado. Construímos verdadeiros Lobbies Digitais que transmitem solidez e sofisticação no primeiro segundo.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Vídeo Hero Cinematográfico Contínuo</strong>
+                <span class="text-slate-400 text-sm">Mansões, empreendimentos e marcas em loop contínuo e silencioso com proteção visual de alto contraste.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Contraste Absoluto de Marca (Brand Contrast Law)</strong>
+                <span class="text-slate-400 text-sm">Bases obsidian e faixas solares executivas que fazem seu logotipo sobressair com 100% de nitidez e prestígio.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Zero AI Slop & Tipografia Editorial Nobre</strong>
+                <span class="text-slate-400 text-sm">Sem clichês de inteligência artificial. Tipografia com peso, respiro aerado e proporções áureas de agência internacional.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button class="open-demo-modal btn-solar text-sm py-3 px-6">
+              Solicitar Projeto de Site Exclusivo
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl p-6 glass-obsidian-card relative overflow-hidden border border-white/10 shadow-2xl">
+            <img 
+              src="assets/images/mansao-video-poster.jpg" 
+              alt="Design de Ultra Luxo NEXO" 
+              class="w-full h-64 sm:h-80 object-cover rounded-2xl mb-4 border border-white/10"
+            >
+            <div class="flex items-center justify-between text-xs sm:text-sm">
+              <div>
+                <div class="font-extrabold text-white text-base">Coleção Privada Vanguard & Rico Ricardo</div>
+                <div class="text-slate-400">Taxa de Rejeição abaixo de 18% • Carregamento em 0.6s</div>
+              </div>
+              <span class="bg-[#FFE600] text-slate-950 font-black px-3 py-1 rounded-full text-xs">
+                Ultra Luxo 2026
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PAINEL 3: AUTOMAÇÕES COM IA & AGENTES AUTÔNOMOS -->
+    <div id="tab-ia" class="tab-panel hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600]/10 border border-[#FFE600]/30 text-[#FFE600] text-xs font-bold font-mono-tech">
+            <span>INTELIGÊNCIA ARTIFICIAL & FLUXOS n8n</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            Automações Corporativas que Trabalham Enquanto Sua Equipe Descansa
+          </h3>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Conectamos seu negócio a pipelines de automação sem fricção. Webhooks em tempo real, emissão de cobranças automáticas via Asaas, triagem inteligente de leads no WhatsApp e agentes autônomos.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Cobrança e Assinatura Recorrente via Asaas</strong>
+                <span class="text-slate-400 text-sm">Geração automática de PIX, boleto e cartão com baixa instantânea no painel sem conciliação manual.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Orquestração n8n e Webhooks Resilientes</strong>
+                <span class="text-slate-400 text-sm">Integrações que nunca caem, com reprocessamento automático de erros e notificações no celular.</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-7 h-7 rounded-lg bg-[#FFE600] text-slate-950 font-black flex items-center justify-center shrink-0 mt-0.5">✓</div>
+              <div>
+                <strong class="text-white text-base block font-bold">Bot Inteligente de Atendimento com Horário Real</strong>
+                <span class="text-slate-400 text-sm">Sincronizado com a escala de atendimento da sua equipe, alternando respostas online e offline com elegância.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button class="open-demo-modal btn-solar text-sm py-3 px-6">
+              Agendar Diagnóstico de Automação
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl p-6 glass-obsidian-card relative overflow-hidden border border-white/10 shadow-2xl">
+            <div class="text-xs font-mono-tech text-slate-400 pb-3 border-b border-white/10 flex items-center justify-between">
+              <span>n8n_cluster_enterprise.json</span>
+              <span class="text-emerald-400 font-bold">STATUS: EXECUTANDO</span>
+            </div>
+
+            <div class="mt-4 space-y-3 font-mono-tech text-xs">
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-between">
+                <span class="text-yellow-400">1. Webhook Recebe Lead Imóvel</span>
+                <span class="text-emerald-400">200 OK (12ms)</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-between">
+                <span class="text-blue-400">2. Triagem e Simulação de Crédito</span>
+                <span class="text-emerald-400">Calculado</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-between">
+                <span class="text-purple-400">3. Notificação no WhatsApp do Corretor</span>
+                <span class="text-emerald-400">Enviado</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-700/60 flex items-center justify-between">
+                <span class="text-emerald-400">4. Registro Automático no Kanban</span>
+                <span class="text-emerald-400">Gravado</span>
+              </div>
+            </div>
+
+            <div class="mt-5 p-3 rounded-xl bg-[#FFE600]/10 border border-[#FFE600]/30 text-[#FFE600] text-xs font-bold text-center">
+              Tempo total de processamento: 0.18 segundos
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. CALCULADORA INTERATIVA DE ROI & ECONOMIA ANUAL                          -->
+  <!-- ========================================================================= -->
+  <section id="calculadora" class="py-20 sm:py-28 bg-[#0C0E15] border-y border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+          SIMULADOR FINANCEIRO
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 mb-4">
+          Quanto Sua Operação Deixa na Mesa com Softwares Lentos?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Descubra na prática a economia direta e as centenas de horas recuperadas ao migrar para a arquitetura enxuta e moderna da NEXO Tecnologia.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Controles Interativos -->
+        <div class="lg:col-span-7 glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10">
+          <div class="space-y-8">
+            
+            <!-- Slider: Usuários / Corretores -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <label for="calc-users" class="text-sm sm:text-base font-bold text-white">Tamanho da Sua Equipe (Corretores/Usuários):</label>
+                <span id="calc-users-val" class="text-base sm:text-lg font-black text-[#FFE600] font-mono-tech">5 usuários</span>
+              </div>
+              <input type="range" id="calc-users" min="1" max="25" value="5" step="1" aria-label="Tamanho da equipe em corretores ou usuários">
+              <div class="flex justify-between text-xs text-slate-500 mt-1 font-mono-tech">
+                <span>1 autônomo</span>
+                <span>10 equipe</span>
+                <span>25 imobiliária média</span>
+              </div>
+            </div>
+
+            <!-- Slider: Gasto Atual por Usuário -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <label for="calc-cost" class="text-sm sm:text-base font-bold text-white">Gasto Médio Atual por Usuário (Sistemas Legados):</label>
+                <span id="calc-cost-val" class="text-base sm:text-lg font-black text-[#FFE600] font-mono-tech">R$ 180/mês</span>
+              </div>
+              <input type="range" id="calc-cost" min="80" max="450" value="180" step="10" aria-label="Gasto médio mensal por usuário com sistemas legados">
+              <div class="flex justify-between text-xs text-slate-500 mt-1 font-mono-tech">
+                <span>R$ 80/mês</span>
+                <span>R$ 250/mês</span>
+                <span>R$ 450/mês</span>
+              </div>
+            </div>
+
+            <!-- Destaque do Diferencial NEXO -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 text-xs sm:text-sm text-slate-300">
+              💡 <strong>Regra de Ouro NEXO:</strong> Não cobramos taxas ocultas por lead recebido nem trancamos você em fidelidade de 12 meses. Você paga um valor fixo justo e sua operação voa.
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Painel de Resultados Calculados -->
+        <div class="lg:col-span-5 rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#161A28] to-[#0A0C12] border border-[#FFE600]/30 shadow-2xl relative">
+          <div class="text-xs font-mono-tech text-[#FFE600] uppercase font-bold tracking-wider mb-2">
+            RESULTADO ESTIMADO ANUAL
+          </div>
+          <div class="text-xs text-slate-400 mb-6">Economia direta no seu caixa:</div>
+
+          <div class="mb-6">
+            <span class="text-xs uppercase text-slate-400 font-bold block">Economia Direta Estimada:</span>
+            <div id="calc-savings-annual" class="text-4xl sm:text-5xl font-black text-[#FFE600] font-mono-tech mt-1">
+              R$ 9.000
+            </div>
+            <span class="text-xs text-emerald-400 font-bold mt-1 block">Economia no primeiro ano de uso</span>
+          </div>
+
+          <div class="space-y-3 pt-4 border-t border-white/10 text-xs sm:text-sm">
+            <div class="flex justify-between text-slate-300">
+              <span>Custo Médio Anterior:</span>
+              <span id="calc-old-annual" class="font-bold text-white font-mono-tech">R$ 10.800/ano</span>
+            </div>
+            <div class="flex justify-between text-slate-300">
+              <span>Investimento NEXO:</span>
+              <span id="calc-nexo-cost" class="font-bold text-[#FFE600] font-mono-tech">R$ 150/mês (Fixo)</span>
+            </div>
+            <div class="flex justify-between text-slate-300">
+              <span>Tempo Operacional Salvo:</span>
+              <span id="calc-hours-saved" class="font-bold text-emerald-400 font-mono-tech">+1.080 horas</span>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <button class="open-demo-modal btn-solar w-full text-center py-3.5 text-sm font-extrabold shadow-lg">
+              Garantir Minha Economia com a NEXO
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. OS SEIS PILARES INEGOCIÁVEIS DA NEXO (BENTO GRID)                       -->
+  <!-- ========================================================================= -->
+  <section id="diferenciais" class="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+        DIFERENCIAIS COMPETITIVOS
+      </span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 mb-4">
+        Por Que as Melhores Operações Escolhem a <span class="text-gradient-gold">NEXO</span>?
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg">
+        Construímos soluções focadas em faturamento real e eficiência cirúrgica, sem rodeios ou promessas vazias.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      
+      <!-- Card 1 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Zero Contratos com Amarras</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Você não fica preso a fidelidades abusivas de 12 meses com multas pesadas. Nossos clientes permanecem conosco porque nossa tecnologia entrega resultados concretos todo mês.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          🔄
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Portabilidade sem Digitação</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          O medo de perder centenas de cadastros antigos acabou. Nosso motor inteligente migra seus imóveis, fotos e descrições de qualquer portal ou sistema em poucos minutos.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          📱
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Mobile First com PWA Instalável</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          88% dos clientes e 95% dos corretores acessam pelo celular. Nossos sites e CRM abrem com a fluidez de um aplicativo nativo no bolso de quem decide.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          🏦
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Simulador Caixa Integrado</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Filtre quem realmente possui capacidade de compra antes da visita presencial. O lead já chega ao WhatsApp sabendo a estimativa de parcelas e entrada.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          💎
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Estética Quiet Luxury 2026</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Banimos layouts genéricos e poluição visual. Cada detalhe, contraste e tipografia reflete autoridade de alto escalão para valorizar o ticket dos seus produtos.
+        </p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 hover:border-[#FFE600]/40 transition-all">
+        <div class="w-12 h-12 rounded-2xl bg-[#FFE600]/15 text-[#FFE600] font-black text-2xl flex items-center justify-center mb-6 border border-[#FFE600]/30">
+          🤝
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Suporte Direto com os Criadores</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Nada de atendentes robóticos que não resolvem nada. Você fala diretamente com a liderança técnica (Ricardo & Severino) com resposta ágil e compromisso de entrega.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. PLANOS & INVESTIMENTO TRANSPARENTE                                      -->
+  <!-- ========================================================================= -->
+  <section id="planos" class="py-24 sm:py-32 bg-[#0A0C13] border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600]/10 border border-[#FFE600]/30 text-[#FFE600] text-xs font-bold font-mono-tech mb-3">
+          <span>INVESTIMENTO TRANSPARENTE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
+          Planos Feitos para Escalar Seu Negócio
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Condições justas, sem fidelidade e com <strong class="text-[#FFE600]">4 dias de degustação gratuita</strong> para você testar com sua equipe antes de investir qualquer valor.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-stretch">
+        
+        <!-- PLANO 1: NEXO START -->
+        <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase font-mono-tech">Autônomos & Pequenos Times</div>
+            <h3 class="text-2xl font-extrabold text-white mt-1">NEXO Start</h3>
+            <p class="text-xs text-slate-400 mt-2 mb-6">Ideal para corretores individuais que precisam de presença e organização.</p>
+            
+            <div class="mb-6">
+              <span class="text-4xl font-black text-white font-mono-tech">R$ 100</span>
+              <span class="text-slate-400 text-xs">/mês</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Até 60 imóveis ativos</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> 1 a 2 corretores/acessos</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Site oficial responsivo</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Simulador Caixa no site</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> WhatsApp com horário real</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> CRM Kanban de leads</li>
+            </ul>
+          </div>
+
+          <button class="open-demo-modal btn-obsidian-outline w-full text-center py-3 text-xs sm:text-sm">
+            Começar 4 Dias Grátis
+          </button>
+        </div>
+
+        <!-- PLANO 2: NEXO PRIME (DESTAQUE OURO) -->
+        <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#1E2335] via-[#121522] to-[#0A0C13] border-2 border-[#FFE600] flex flex-col justify-between shadow-2xl relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FFE600] text-slate-950 font-black text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-lg">
+            Mais Escolhido
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-[#FFE600] uppercase font-mono-tech mt-1">Imobiliárias em Crescimento</div>
+            <h3 class="text-2xl font-extrabold text-white mt-1">NEXO Prime</h3>
+            <p class="text-xs text-slate-300 mt-2 mb-6">O plano completo para imobiliárias que buscam alta conversão e automação.</p>
+            
+            <div class="mb-6">
+              <span class="text-4xl font-black text-[#FFE600] font-mono-tech">R$ 150</span>
+              <span class="text-slate-400 text-xs">/mês</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-200 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Até 200 imóveis ativos</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Até 5 corretores na equipe</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Roleta inteligente de leads</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Portabilidade XML / Zap em 1 clique</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Integração multi-portais</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> PWA Instalável no celular</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Suporte prioritário Ricardo & Severino</li>
+            </ul>
+          </div>
+
+          <button class="open-demo-modal btn-solar w-full text-center py-3.5 text-xs sm:text-sm font-black shadow-lg">
+            Garantir 4 Dias Grátis VIP
+          </button>
+        </div>
+
+        <!-- PLANO 3: NEXO PRO ENTERPRISE -->
+        <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase font-mono-tech">Grandes Equipes & Redes</div>
+            <h3 class="text-2xl font-extrabold text-white mt-1">NEXO Pro</h3>
+            <p class="text-xs text-slate-400 mt-2 mb-6">Capacidade máxima, robô de atendimento e automações corporativas.</p>
+            
+            <div class="mb-6">
+              <span class="text-4xl font-black text-white font-mono-tech">R$ 250</span>
+              <span class="text-slate-400 text-xs">/mês</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Imóveis ilimitados</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Usuários e corretores ilimitados</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Robô inteligente de triagem no WhatsApp</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Automações n8n & Webhooks dedicados</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Emissão fiscal e gateway Asaas</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> SLA de 99.98% e backup redundante</li>
+            </ul>
+          </div>
+
+          <button class="open-demo-modal btn-obsidian-outline w-full text-center py-3 text-xs sm:text-sm">
+            Falar com Consultor
+          </button>
+        </div>
+
+        <!-- PLANO 4: PROJETOS SOB MEDIDA (NEXO STUDIO) -->
+        <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold text-[#FFE600] uppercase font-mono-tech">Boutique Tailor-Made</div>
+            <h3 class="text-2xl font-extrabold text-white mt-1">NEXO Studio</h3>
+            <p class="text-xs text-slate-400 mt-2 mb-6">Desenvolvimento exclusivo de sites de ultra luxo, portais e marcas.</p>
+            
+            <div class="mb-6">
+              <span class="text-2xl font-black text-white font-serif-luxury italic">Sob Medida</span>
+              <span class="text-slate-400 text-xs block">Projetos Exclusivos</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Direção de arte exclusiva 2026</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Vídeo Hero contínuo cinematográfico</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Arquitetura Quiet Luxury & Digital Lobby</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> SEO técnico de alta autoridade</li>
+              <li class="flex items-center gap-2"><span class="text-[#FFE600] font-bold">✓</span> Código proprietário ultraleve</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/5511914879393?text=Ol%C3%A1%20Ricardo!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20desenvolvimento%20de%20site%20exclusivo%20no%20NEXO%20Studio." target="_blank" rel="noopener noreferrer" class="btn-solar w-full text-center py-3 text-xs sm:text-sm">
+            Solicitar Proposta Studio
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Banner de Implantação e Portabilidade -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <div class="text-[#FFE600] font-bold text-xs font-mono-tech uppercase">PACOTE DE IMPLANTAÇÃO EXECUTIVA</div>
+          <h4 class="text-lg sm:text-xl font-bold text-white mt-1">Taxa Única de Setup: R$ 600</h4>
+          <p class="text-slate-400 text-xs sm:text-sm max-w-2xl mt-1">
+            Inclui entrega do site oficial no ar, domínio configurado, treinamento da equipe e <strong class="text-white">portabilidade completa de todos os seus imóveis antigos</strong> sem você ter trabalho nenhum.
+          </p>
+        </div>
+        <button class="open-demo-modal btn-solar text-xs sm:text-sm py-3 px-6 whitespace-nowrap">
+          Conversar com Ricardo
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. PROVA SOCIAL & DEPOIMENTOS DE ALTO PADRÃO                               -->
+  <!-- ========================================================================= -->
+  <section class="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+        AUTORIDADE COMPROVADA
+      </span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-3 mb-4">
+        O Que Dizem Quem Já Opera com a <span class="text-gradient-gold">NEXO</span>
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg">
+        Resultados palpáveis em velocidade de atendimento, satisfação dos corretores e crescimento de receita.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-[#FFE600] mb-4 text-base">
+            ★★★★★
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+            "A portabilidade em 1 clique parecia mágica. Estávamos presos a um sistema antigo que custava R$ 700/mês e travava o tempo todo. Em menos de 2 horas o Ricardo migrou toda a nossa carteira de imóveis para o NEXO. Nossos corretores adoraram a rapidez no celular."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+          <div class="w-10 h-10 rounded-full bg-[#FFE600] text-slate-950 font-black flex items-center justify-center text-sm">
+            RR
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Rico Ricardo Imóveis</div>
+            <div class="text-xs text-slate-400">Parque Marajoara • Santo André/SP</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-[#FFE600] mb-4 text-base">
+            ★★★★★
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+            "O simulador de financiamento Caixa dentro do site mudou completamente a qualidade dos contatos. O cliente já chega no WhatsApp sabendo quanto precisa dar de entrada e qual parcela cabe no bolso. É um ganho brutal de tempo para a equipe de vendas."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+          <div class="w-10 h-10 rounded-full bg-blue-500 text-white font-black flex items-center justify-center text-sm">
+            VP
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Vanguard Prime Imóveis</div>
+            <div class="text-xs text-slate-400">Imóveis de Médio & Alto Padrão</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-[#FFE600] mb-4 text-base">
+            ★★★★★
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+            "O padrão visual dos sites da NEXO não tem comparação no mercado brasileiro. A estética Quiet Luxury com vídeo de mansão contínuo dá um ar de multinacional de luxo para a imobiliária. Nossos clientes proprietários ficaram encantados com o catálogo."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+          <div class="w-10 h-10 rounded-full bg-emerald-500 text-slate-950 font-black flex items-center justify-center text-sm">
+            CD
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Célia Decor & Arquitetura</div>
+            <div class="text-xs text-slate-400">Design de Interiores & Alta Decoração</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. FAQ INTERATIVO (ACORDEÃO DE ALTO NÍVEL)                                 -->
+  <!-- ========================================================================= -->
+  <section id="faq" class="py-20 sm:py-28 bg-[#0C0E15] border-y border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+          TRANSPARÊNCIA TOTAL
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+          Perguntas Frequentes
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Tire suas dúvidas técnicas e comerciais de forma direta e objetiva.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-2xl glass-obsidian-card border border-white/10 overflow-hidden">
+          <button class="faq-trigger w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-[#FFE600] transition">
+            <span>Como funciona a portabilidade de dados dos meus imóveis antigos?</span>
+            <svg class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Você não precisa cadastrar nenhum imóvel na mão! Nossa ferramenta importa automaticamente todo o seu inventário através de Feed XML padrão VivaReal/Zap ou planilhas Excel/CSV. Fotos em alta resolução, descrições, preços e dados de IPTU/condomínio são migrados de forma limpa e organizada em questão de minutos.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-2xl glass-obsidian-card border border-white/10 overflow-hidden">
+          <button class="faq-trigger w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-[#FFE600] transition">
+            <span>Como funcionam os 4 dias de teste 100% grátis?</span>
+            <svg class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Nós liberamos um acesso de demonstração e testes completo no painel administrativo para você e sua equipe navegarem, testarem o simulador Caixa e cadastrarem leads sem necessidade de cartão de crédito prévio. Se você gostar, fazemos o setup e a implantação oficial.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-2xl glass-obsidian-card border border-white/10 overflow-hidden">
+          <button class="faq-trigger w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-[#FFE600] transition">
+            <span>Existe contrato de fidelidade ou multa rescisória?</span>
+            <svg class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Absolutamente não. Trabalhamos no modelo SaaS pré-pago mensal. Você só continua utilizando enquanto o sistema estiver gerando economia e mais fechamentos para o seu negócio. Liberdade total e respeito aos nossos clientes parceiros.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-2xl glass-obsidian-card border border-white/10 overflow-hidden">
+          <button class="faq-trigger w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-[#FFE600] transition">
+            <span>A NEXO desenvolve projetos sob medida para outros nichos?</span>
+            <svg class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Sim! Através da nossa divisão <strong>NEXO Studio</strong>, projetamos sites e portais institucionais de ultra luxo para clínicas médicas de alto padrão, marcas de arquitetura e alta decoração, concessionárias premium e indústrias que exigem um posicionamento digital de prestígio internacional.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item rounded-2xl glass-obsidian-card border border-white/10 overflow-hidden">
+          <button class="faq-trigger w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-[#FFE600] transition">
+            <span>Como é feito o pagamento da implantação e da mensalidade?</span>
+            <svg class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300 text-[#FFE600]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Aceitamos PIX à vista com ativação imediata, boleto bancário e cartão de crédito em até 12x via gateway seguro Asaas. Você recebe recibo corporativo ou nota fiscal com total transparência contábil.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. CTA FINAL DE ALTA CONVERSÃO (CALL TO ACTION VIP)                       -->
+  <!-- ========================================================================= -->
+  <section class="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+    <div class="rounded-3xl p-8 sm:p-14 bg-gradient-to-b from-[#191D2D] via-[#10121D] to-[#0A0C12] border-2 border-[#FFE600]/40 shadow-2xl relative overflow-hidden">
+      
+      <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-[#FFE600]/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#FFE600]/10 blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto">
+        <span class="text-xs sm:text-sm font-bold tracking-widest text-[#FFE600] uppercase font-mono-tech">
+          HORA DE ELEVAR O NÍVEL
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3 mb-6 leading-tight">
+          Pronto para Colocar Sua Operação no Topo do Mercado?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-10">
+          Agende agora mesmo uma apresentação de 30 minutos com o Ricardo ou inicie seus 4 dias de teste grátis no NEXO CRM. Sem burocracia, sem compromisso financeiro inicial.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <button class="open-demo-modal btn-solar text-base py-4 px-8 w-full sm:w-auto shadow-2xl">
+            <span>Iniciar Degustação de 4 Dias</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <a href="https://wa.me/5511914879393?text=Ol%C3%A1%20Ricardo!%20Gostaria%20de%20conversar%20diretamente%20com%20voc%C3%AA%20sobre%20a%20NEXO%20Tecnologia." target="_blank" rel="noopener noreferrer" class="btn-obsidian-outline text-base py-4 px-8 w-full sm:w-auto">
+            <span>Falar no WhatsApp Direto</span>
+            <svg class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. RODAPÉ OBSIDIAN INSTITUCIONAL COMPLETO                                -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#06070B] border-t border-white/10 text-slate-400 text-sm pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Coluna 1: Marca & Síntese -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img 
+              src="assets/images/nexo-logo-horizontal.png" 
+              alt="NEXO Tecnologia" 
+              class="h-10 w-auto object-contain"
+              onerror="this.style.display='none';"
+            >
+            <span class="font-extrabold text-white text-lg tracking-wider">NEXO TECNOLOGIA</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+            Boutique de engenharia de software e inteligência artificial de alto padrão. Especialistas em CRM imobiliário, portais com estética Quiet Luxury e automação corporativa.
+          </p>
+          <div class="text-xs font-mono-tech text-slate-500 pt-2">
+            <div>Sede Operacional: Santo André • São Paulo - SP</div>
+            <div>Cluster em Nuvem: AWS & Supabase Enterprise</div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Soluções -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono-tech mb-4">Soluções</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="#nexo-crm" class="hover:text-[#FFE600] transition">NEXO CRM Imobiliário</a></li>
+            <li><a href="#sites-luxo" class="hover:text-[#FFE600] transition">Sites de Ultra Luxo</a></li>
+            <li><a href="#automacao-ia" class="hover:text-[#FFE600] transition">Automações n8n & IA</a></li>
+            <li><a href="#calculadora" class="hover:text-[#FFE600] transition">Calculadora de ROI</a></li>
+            <li><a href="dossie.html" class="hover:text-[#FFE600] transition">Dossiê Executivo (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Planos & Acesso -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono-tech mb-4">Planos</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="#planos" class="hover:text-[#FFE600] transition">NEXO Start (R$ 100/mês)</a></li>
+            <li><a href="#planos" class="hover:text-[#FFE600] transition">NEXO Prime (R$ 150/mês)</a></li>
+            <li><a href="#planos" class="hover:text-[#FFE600] transition">NEXO Pro (R$ 250/mês)</a></li>
+            <li><a href="#planos" class="hover:text-[#FFE600] transition">NEXO Studio Sob Medida</a></li>
+            <li><a href="https://ricardorickbony-lgtm.github.io/rico-ricardo-imoveis/" target="_blank" rel="noopener noreferrer" class="hover:text-[#FFE600] transition">Demonstração Online ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contato VIP -->
+        <div>
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase font-mono-tech mb-4">Contato VIP</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li class="flex items-center gap-2">
+              <span class="text-[#FFE600]">📲</span>
+              <a href="https://wa.me/5511914879393" target="_blank" rel="noopener noreferrer" class="hover:text-[#FFE600] transition font-bold text-white">(11) 91487-9393</a>
+            </li>
+            <li class="text-xs text-slate-400">Segunda a Sexta: 08h às 19h</li>
+            <li class="text-xs text-slate-400">Sábado: 08h às 13h</li>
+            <li class="pt-2">
+              <a href="https://wa.me/5511914879393?text=Ol%C3%A1%20Ricardo!%20Gostaria%20de%20falar%20com%20a%20diretoria%20da%20NEXO%20Tecnologia." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-[#FFE600] font-bold hover:underline">
+                <span>Falar com Ricardo</span> <span>➔</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright e Assinatura Oficial -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 NEXO Tecnologia. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="dossie.html" class="hover:text-white transition">Dossiê Técnico</a>
+          <span>•</span>
+          <span class="text-[#FFE600] font-semibold">Padrão Oficial Ricardo & Severino</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 11. MODAL DE AGENDAMENTO VIP & DEMONSTRAÇÃO DE 4 DIAS                     -->
+  <!-- ========================================================================= -->
+  <div id="vip-demo-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden transition-opacity"></div>
+  <div id="vip-demo-modal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-lg bg-[#0E111A] border border-[#FFE600]/40 rounded-3xl p-6 sm:p-8 z-50 hidden shadow-2xl">
+    
+    <div class="flex items-center justify-between pb-4 border-b border-white/10">
+      <div>
+        <span class="text-xs font-bold text-[#FFE600] uppercase font-mono-tech">DEMONSTRAÇÃO VIP EXCLUSIVA</span>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">Liberar 4 Dias de Teste Grátis</h3>
+      </div>
+      <button id="vip-demo-close" aria-label="Fechar Modal" class="p-2 text-slate-400 hover:text-white transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <form id="vip-demo-form" class="mt-6 space-y-4">
+      <div>
+        <label for="modal-nome" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Seu Nome / Responsável:</label>
+        <input type="text" id="modal-nome" required placeholder="Ex: Ricardo Silva" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FFE600] transition">
+      </div>
+
+      <div>
+        <label for="modal-empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Nome da Imobiliária ou Empresa:</label>
+        <input type="text" id="modal-empresa" required placeholder="Ex: Imobiliária Prime ABC" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FFE600] transition">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label for="modal-segmento" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Segmento:</label>
+          <select id="modal-segmento" class="w-full bg-slate-900 border border-white/10 rounded-xl px-3 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-[#FFE600] transition">
+            <option value="Imobiliária">Imobiliária Tradicional</option>
+            <option value="Corretor Autônomo">Corretor Autônomo</option>
+            <option value="Construtora / Loteamento">Construtora / Loteadora</option>
+            <option value="Arquitetura / Alta Decoração">Arquitetura / Alta Decoração</option>
+            <option value="Outro Segmento">Outro Segmento</option>
+          </select>
+        </div>
+        <div>
+          <label for="modal-tamanho" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Tamanho da Equipe:</label>
+          <select id="modal-tamanho" class="w-full bg-slate-900 border border-white/10 rounded-xl px-3 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-[#FFE600] transition">
+            <option value="1 a 2 corretores">1 a 2 pessoas</option>
+            <option value="3 a 6 corretores">3 a 6 pessoas</option>
+            <option value="7 a 15 corretores">7 a 15 pessoas</option>
+            <option value="Mais de 15 corretores">15+ pessoas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="pt-4">
+        <button type="submit" class="btn-solar w-full text-center py-4 text-sm font-black shadow-xl">
+          Avançar para Ativação no WhatsApp ➔
+        </button>
+        <p class="text-[11px] text-slate-400 text-center mt-2">
+          Você será direcionado diretamente ao WhatsApp do Ricardo para liberação do acesso.
+        </p>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 12. COMPONENTE: BOTÃO INTELIGENTE DE WHATSAPP (PADRÃO RICARDO & SEVERINO) -->
+  <!-- ========================================================================= -->
+  <div id="whatsapp-widget" class="wa-widget" aria-label="Atendimento via WhatsApp">
+    <a id="wa-link" href="#" target="_blank" rel="noopener noreferrer" class="wa-btn" title="Falar no WhatsApp com a NEXO Tecnologia">
+      <div class="wa-icon-container">
+        <svg class="wa-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span id="wa-status-dot" class="wa-status-dot online"></span>
+      </div>
+      <div class="wa-text-box">
+        <span class="wa-title">NEXO Atendimento VIP</span>
+        <span id="wa-status-text" class="wa-status-text">Online Agora</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Scripts Oficiais -->
+  <script src="js/main.js"></script>
+</body>
+</html>
