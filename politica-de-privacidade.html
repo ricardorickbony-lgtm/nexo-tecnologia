@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Políticas de Privacidade &amp; Gestão de Cookies — NEXO Tecnologia</title>
+  <meta name="description" content="Diretrizes oficiais de privacidade, proteção de dados e política de cookies da NEXO Tecnologia em conformidade com a LGPD (Lei nº 13.709/2018).">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Políticas de Privacidade &amp; Gestão de Cookies — NEXO Tecnologia">
+  <meta property="og:description" content="Conformidade LGPD, segurança da informação e diretrizes de cookies e remarketing da NEXO Tecnologia.">
+  <meta property="og:image" content="assets/images/nexo-icon-512.png">
+  <meta property="og:url" content="https://ricardorickbony-lgtm.github.io/nexo-tecnologia/politica-de-privacidade.html">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nexo: {
+              orange: '#F37021',
+              orangeHover: '#FF7A1A',
+              orangeDark: '#D45408',
+              blue: '#0A84FF',
+              blueDeep: '#0060B2',
+              blueDark: '#004785'
+            },
+            obsidian: {
+              700: '#1B2236',
+              800: '#131826',
+              850: '#0D111D',
+              900: '#090C14',
+              950: '#06070B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Estilos Oficiais Customizados -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#090C14] text-white antialiased selection:bg-[#F37021] selection:text-white flex flex-col min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- 0. BARRA SUPERIOR EXECUTIVA                                               -->
+  <!-- ========================================================================= -->
+  <aside aria-label="Informações Corporativas" class="bg-gradient-to-r from-[#00386B] via-[#005AA3] to-[#F37021] text-white w-full px-6 sm:px-12 lg:px-20 xl:px-24 py-2.5 text-xs font-bold tracking-wide relative z-50 shadow-md">
+    <div class="w-full flex items-center justify-between flex-wrap gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-white shadow-sm animate-pulse"></span>
+          <span class="tracking-wider uppercase font-mono-tech text-[11px] sm:text-xs">NEXO TECNOLOGIA • SEGURANÇA JURÍDICA &amp; LGPD</span>
+        </span>
+        <span class="hidden md:inline text-white/50">•</span>
+        <span id="header-wa-status" class="hidden md:inline-flex items-center gap-1.5 font-bold text-white/95">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Gestão VIP Online
+        </span>
+      </div>
+
+      <div class="flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-extrabold ml-auto sm:ml-0">
+        <a href="https://wa.me/5511970558412?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20as%20pol%C3%ADticas%20de%20privacidade%20da%20NEXO." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white hover:text-white/80 transition" title="WhatsApp Oficial da Gestão da NEXO">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span>(11) 97055-8412</span>
+        </a>
+        <a href="index.html" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-3.5 py-1 rounded-full transition border border-white/20">
+          <span>← Voltar ao Site Oficial</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HEADER OBSIDIAN AÉREO                                                  -->
+  <!-- ========================================================================= -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#090C14]/90 backdrop-blur-2xl border-b border-white/10 transition-all duration-300 w-full px-6 sm:px-12 lg:px-20 xl:px-24">
+    <div class="w-full flex items-center justify-between h-24 sm:h-28">
+      
+      <!-- LOGO NEXO OFICIAL -->
+      <a href="index.html" class="flex items-center gap-3.5 sm:gap-4 group shrink-0" title="Página Inicial — NEXO Tecnologia">
+        <div class="relative w-11 h-11 sm:w-13 sm:h-13 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#0A84FF]/20 to-[#F37021]/20 border border-white/15 p-1.5 shadow-[0_0_25px_rgba(10,132,255,0.25)] group-hover:shadow-[0_0_35px_rgba(243,112,33,0.45)] transition-all duration-300">
+          <img src="assets/images/nexo-icone.png" alt="Ícone Oficial NEXO Tecnologia" class="w-full h-full object-contain filter drop-shadow">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-2xl sm:text-3xl tracking-tight leading-none text-white flex items-center">
+            NEXO<span class="text-[#F37021] ml-0.5">.</span>
+          </span>
+          <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.28em] font-mono-tech text-slate-400 font-bold mt-1">
+            TECNOLOGIA ENTERPRISE
+          </span>
+        </div>
+      </a>
+
+      <!-- NAVEGAÇÃO -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-xs lg:text-sm font-semibold tracking-wide text-slate-300">
+        <a href="index.html#nexo-crm" class="hover:text-white transition">NEXO CRM</a>
+        <a href="index.html#arsenal-crm" class="hover:text-white transition">Arsenal Tecnológico</a>
+        <a href="index.html#sites-luxo" class="hover:text-white transition">Portais de Luxo</a>
+        <a href="dossie.html" class="hover:text-white transition">Dossiê Técnico</a>
+      </nav>
+
+      <!-- BOTÃO GERENCIAR COOKIES -->
+      <div class="flex items-center gap-3">
+        <button type="button" data-open-cookie-preferences class="btn-nexo-outline text-xs sm:text-sm py-2.5 px-4 sm:px-6">
+          <span class="text-base">🍪</span>
+          <span>Preferências de Cookies</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO DA POLÍTICA DE PRIVACIDADE                                        -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-16 pb-14 px-6 sm:px-12 lg:px-20 xl:px-24 border-b border-white/10 bg-gradient-to-b from-[#0D111D] to-[#090C14]">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A84FF]/10 border border-[#0A84FF]/30 text-[#0A84FF] text-xs font-mono-tech font-bold uppercase tracking-wider">
+        <span>🛡️ CONFORMIDADE LGPD • LEI FEDERAL Nº 13.709/2018</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+        Políticas de Privacidade &amp; <br>
+        <span class="text-gradient-nexo">Gestão de Cookies &amp; Remarketing</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Na <strong class="text-white">NEXO Tecnologia</strong>, a transparência, a integridade dos dados e o respeito aos seus direitos digitais são pilares inegociáveis. Conheça como tratamos informações corporativas, métricas de navegação e tecnologias de remarketing de forma ética, segura e em estrito cumprimento da lei brasileira.
+      </p>
+
+      <div class="pt-2 flex flex-wrap items-center justify-center gap-4 text-xs font-mono-tech text-slate-400">
+        <span class="bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">📅 Última Atualização: 07 de Outubro de 2026</span>
+        <span class="bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">🔒 Criptografia Ativa: TLS 1.3 / 256-bit</span>
+        <span class="bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">🏢 Sede: Santo André - SP</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. PAINEL DE CONTROLE RÁPIDO DE COOKIES (INTERATIVO)                      -->
+  <!-- ========================================================================= -->
+  <section class="py-10 px-6 sm:px-12 lg:px-20 xl:px-24 bg-[#0B0F1A] border-b border-white/10">
+    <div class="max-w-4xl mx-auto glass-obsidian-card p-6 sm:p-8 rounded-3xl border border-[#0A84FF]/30 relative overflow-hidden">
+      <div class="absolute -right-16 -top-16 w-60 h-60 bg-[#0A84FF]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">⚡</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Central de Consentimento de Cookies em Tempo Real</h2>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-xl leading-relaxed">
+            Você tem total soberania sobre quais tecnologias e rastreadores podem ser ativados durante sua navegação. Seus dados de publicidade e remarketing só serão utilizados após a sua autorização expressa.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap sm:flex-nowrap gap-3 shrink-0 w-full md:w-auto">
+          <button type="button" data-open-cookie-preferences class="btn-nexo-primary text-xs sm:text-sm py-3 px-6 w-full sm:w-auto text-center font-bold">
+            Gerenciar Minhas Preferências
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. ARTIGOS DA POLÍTICA DE PRIVACIDADE                                     -->
+  <!-- ========================================================================= -->
+  <main class="py-16 px-6 sm:px-12 lg:px-20 xl:px-24 flex-1">
+    <article class="max-w-4xl mx-auto space-y-12 text-slate-300 text-sm sm:text-base leading-relaxed">
+
+      <!-- 1. Controlador -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">01</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Identificação do Controlador &amp; Encarregado de Dados (DPO)</h2>
+        </div>
+        <p>
+          O presente documento estabelece as diretrizes de tratamento de dados pessoais realizadas pela <strong class="text-white">NEXO Tecnologia</strong> ("NEXO", "nós" ou "nosso"), pessoa jurídica com sede operacional em Santo André, Estado de São Paulo, na qualidade de Controladora de Dados nos termos do Art. 5º, VI, da Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados - LGPD).
+        </p>
+        <p>
+          Para quaisquer requisições, esclarecimentos, revogação de consentimentos ou exercício dos direitos de titular, nosso Encarregado de Proteção de Dados (DPO) e a gestão executiva podem ser acionados diretamente através do canal oficial:
+        </p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 font-mono-tech text-xs sm:text-sm space-y-1.5 text-slate-200">
+          <div><strong class="text-white">Canal Executivo de Privacidade:</strong> Atendimento via Gestão da NEXO</div>
+          <div><strong class="text-white">WhatsApp Oficial:</strong> <a href="https://wa.me/5511970558412" target="_blank" rel="noopener noreferrer" class="text-[#F37021] hover:underline">(11) 97055-8412</a></div>
+          <div><strong class="text-white">E-mail Corporativo:</strong> privacidade@nexotecnologia.com.br</div>
+          <div><strong class="text-white">Localidade:</strong> Santo André • São Paulo - SP • Brasil</div>
+        </div>
+      </section>
+
+      <!-- 2. Dados Coletados -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">02</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Dados Pessoais Coletados e Formas de Coleta</h2>
+        </div>
+        <p>
+          Coletamos exclusivamente as informações estritamente necessárias para a prestação de serviços de excelência, demonstração de plataformas e comunicação consultiva:
+        </p>
+        <ul class="list-disc list-inside space-y-2 pl-2">
+          <li><strong class="text-white">Dados Fornecidos Voluntariamente:</strong> Nome completo, nome da imobiliária ou empresa, segmento imobiliário, número de corretores na equipe e número de telefone celular/WhatsApp ao solicitar demonstrações VIP do NEXO CRM ou orçamentos de sites.</li>
+          <li><strong class="text-white">Dados de Navegação e Dispositivo:</strong> Endereço IP (anonimizado), tipo de navegador, sistema operacional, resolução de tela, localização geográfica aproximada (nível cidade/estado), páginas navegadas e duração das sessões.</li>
+          <li><strong class="text-white">Dados de Rastreamento e Interações:</strong> Informações de cliques em botões, simulações na calculadora de produtividade e parâmetros UTM de campanhas publicitárias.</li>
+        </ul>
+      </section>
+
+      <!-- 3. Finalidades -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">03</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Finalidades e Bases Legais do Tratamento</h2>
+        </div>
+        <p>
+          Todo tratamento de dados realizado pela NEXO Tecnologia possui amparo em uma das bases legais expressamente previstas na LGPD:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+            <h3 class="font-bold text-white text-sm">Execução de Procedimentos Preliminares (Art. 7º, V)</h3>
+            <p class="text-xs text-slate-400">Liberação do ambiente de teste de 4 dias do NEXO CRM, envio de propostas comerciais personalizadas e contato consultivo pelo WhatsApp da gestão.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+            <h3 class="font-bold text-white text-sm">Consentimento Expresso do Titular (Art. 7º, I)</h3>
+            <p class="text-xs text-slate-400">Ativação de cookies de marketing, pixels de remarketing de parceiros (Meta, Google, LinkedIn) e envio de novidades do ecossistema.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+            <h3 class="font-bold text-white text-sm">Legítimo Interesse do Controlador (Art. 7º, IX)</h3>
+            <p class="text-xs text-slate-400">Aprimoramento contínuo da velocidade de carregamento, métricas agregadas de audiência e auditoria de segurança cibernética contra ataques maliciosos.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+            <h3 class="font-bold text-white text-sm">Cumprimento de Obrigação Legal (Art. 7º, II)</h3>
+            <p class="text-xs text-slate-400">Guarda de registros de conexão à internet em atendimento ao Art. 15 do Marco Civil da Internet (Lei nº 12.965/2014) e conformidade tributária.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Cookies e Remarketing -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#F37021]/15 border border-[#F37021]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#F37021]">04</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Política de Cookies &amp; Campanhas de Remarketing</h2>
+        </div>
+        <p>
+          Cookies são pequenos arquivos de texto armazenados no seu navegador que nos permitem reconhecer seu dispositivo, salvar suas preferências e entender como você interage com nossa plataforma.
+        </p>
+
+        <h3 class="text-base font-bold text-white pt-2">Classificação dos Cookies Utilizados:</h3>
+        
+        <div class="overflow-x-auto pt-2">
+          <table class="w-full text-left border-collapse border border-white/10 text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-white/5 text-white font-mono-tech">
+                <th class="p-3 border border-white/10">Categoria</th>
+                <th class="p-3 border border-white/10">Finalidade</th>
+                <th class="p-3 border border-white/10">Exemplos / Ferramentas</th>
+                <th class="p-3 border border-white/10">Obrigatoriedade</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/10">
+              <tr>
+                <td class="p-3 font-bold text-white border border-white/10">Cookies Estritamente Necessários</td>
+                <td class="p-3 border border-white/10">Garantem o funcionamento básico da página, proteção contra ataques de injeção/CSRF e memorização do consentimento de cookies selecionado.</td>
+                <td class="p-3 border border-white/10 font-mono-tech">nexo_cookie_consent, PHPSESSID, __cf_bm</td>
+                <td class="p-3 text-emerald-400 font-bold border border-white/10">Essenciais (Sempre Ativos)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-white border border-white/10">Cookies de Desempenho e Analytics</td>
+                <td class="p-3 border border-white/10">Coletam métricas anônimas de uso, páginas mais visitadas, taxas de rejeição e tempo de resposta para que possamos otimizar a usabilidade do site.</td>
+                <td class="p-3 border border-white/10 font-mono-tech">Google Analytics 4 (_ga, _ga_*)</td>
+                <td class="p-3 text-amber-400 font-bold border border-white/10">Opcionais (Requerem Consentimento)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-white border border-white/10">Cookies de Marketing &amp; Remarketing</td>
+                <td class="p-3 border border-white/10">Permitem a veiculação de anúncios personalizados em plataformas parceiras (Meta, Google, YouTube, LinkedIn) para usuários que já demonstraram interesse prévio no NEXO CRM e em nossas soluções.</td>
+                <td class="p-3 border border-white/10 font-mono-tech">Meta Pixel (_fbp), Google Ads (_gcl_au), LinkedIn Insight (li_fat_id)</td>
+                <td class="p-3 text-[#F37021] font-bold border border-white/10">Opcionais (Requerem Consentimento)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#F37021]/10 border border-[#F37021]/30 mt-4">
+          <h4 class="font-bold text-white text-sm mb-1 flex items-center gap-2">
+            <span>🎯</span> Como Funciona Nosso Remarketing?
+          </h4>
+          <p class="text-xs text-slate-300">
+            Quando você autoriza os <strong>Cookies de Marketing</strong>, tags e pixels proprietários ou de terceiros registram de forma anônima a sua visita a páginas específicas do site. Caso nossa equipe realize campanhas de mídia no Facebook, Instagram, Google ou LinkedIn, você poderá receber convites para conferir demonstrações do NEXO CRM ou novos cases de ultra luxo. <strong>Você pode revogar este consentimento a qualquer instante</strong> clicando no botão "Preferências de Cookies".
+          </p>
+        </div>
+      </section>
+
+      <!-- 5. Compartilhamento -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">05</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Compartilhamento Seguro com Terceiros</h2>
+        </div>
+        <p>
+          A NEXO Tecnologia <strong class="text-white">não comercializa, aluga ou cede dados pessoais de visitantes ou clientes</strong> para quaisquer terceiros para finalidades autônomas. Os dados podem ser compartilhados estritamente com:
+        </p>
+        <ul class="list-disc list-inside space-y-2 pl-2">
+          <li><strong class="text-white">Provedores de Infraestrutura em Nuvem:</strong> Servidores de alta confiabilidade com criptografia e conformidade SOC2 / ISO 27001 (Google Cloud, AWS, Vercel ou similares).</li>
+          <li><strong class="text-white">Plataformas de Mensageria e Comunicação:</strong> Meta / WhatsApp Business API para entrega segura de mensagens solicitadas pelo usuário.</li>
+          <li><strong class="text-white">Autoridades Públicas e Judiciais:</strong> Mediante ordem judicial expressa ou requisição legal de órgãos competentes.</li>
+        </ul>
+      </section>
+
+      <!-- 6. Segurança da Informação -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">06</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Segurança da Informação &amp; Armazenamento</h2>
+        </div>
+        <p>
+          Adotamos as melhores práticas técnicas e organizacionais do mercado para proteger suas informações contra acessos não autorizados, perda acidental, destruição ou alteração ilícita:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-center space-y-1">
+            <span class="text-2xl">🔐</span>
+            <h4 class="font-bold text-white text-xs">Criptografia Ponta a Ponta</h4>
+            <p class="text-[11px] text-slate-400">Tráfego 100% blindado via HTTPS e protocolo TLS 1.3 com certificados de 256 bits.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-center space-y-1">
+            <span class="text-2xl">🛡️</span>
+            <h4 class="font-bold text-white text-xs">Proteção Contra Invasões</h4>
+            <p class="text-[11px] text-slate-400">Firewalls de aplicação (WAF), rate-limiting e mitigação automatizada de ataques DDoS.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-center space-y-1">
+            <span class="text-2xl">👥</span>
+            <h4 class="font-bold text-white text-xs">Acesso Restrito</h4>
+            <p class="text-[11px] text-slate-400">Apenas colaboradores autorizados da gestão da NEXO com autenticação multifator (MFA).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Direitos do Titular -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">07</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Seus Direitos como Titular de Dados (Art. 18 da LGPD)</h2>
+        </div>
+        <p>
+          A qualquer momento e sem custos, você pode requerer à NEXO Tecnologia:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Confirmação e Acesso:</strong> Saber se tratamos seus dados e solicitar cópia integral dos registros.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Correção:</strong> Solicitar a retificação imediata de dados incompletos, inexatos ou desatualizados.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Anonimização ou Eliminação:</strong> Exclusão de dados tratados com seu consentimento ou desnecessários.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Portabilidade:</strong> Transferência de seus dados para outro prestador em formato estruturado.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Revogação do Consentimento:</strong> Desativar cookies de marketing e cancelar mensagens a qualquer momento.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-3 rounded-xl bg-white/5 border border-white/10">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <div><strong class="text-white">Informação sobre Compartilhamento:</strong> Saber com quais entidades seus dados foram compartilhados.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Como Gerenciar Cookies no Navegador -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-[#0A84FF]/15 border border-[#0A84FF]/40 flex items-center justify-center font-mono-tech font-bold text-xs text-[#0A84FF]">08</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Como Gerenciar ou Desativar Cookies no Navegador</h2>
+        </div>
+        <p>
+          Além do nosso painel de controle interativo nesta página, você pode gerenciar ou bloquear cookies diretamente nas preferências do seu navegador web:
+        </p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-xs sm:text-sm">
+          <li><strong>Google Chrome:</strong> Configurações &gt; Privacidade e Segurança &gt; Cookies e outros dados do site.</li>
+          <li><strong>Apple Safari:</strong> Preferências &gt; Privacidade &gt; Bloquear todos os cookies.</li>
+          <li><strong>Mozilla Firefox:</strong> Opções &gt; Privacidade e Segurança &gt; Cookies e Dados de Sites.</li>
+          <li><strong>Microsoft Edge:</strong> Configurações &gt; Permissões do site &gt; Cookies e dados armazenados.</li>
+        </ul>
+        <p class="text-xs text-slate-400 pt-1">
+          *Atenção: A desativação de cookies estritamente necessários pode comprometer algumas funcionalidades interativas do site.
+        </p>
+      </section>
+
+      <!-- 9. Canal de Atendimento -->
+      <section class="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#00386B]/40 to-[#F37021]/30 border border-white/15 space-y-4 text-center">
+        <h3 class="text-lg sm:text-2xl font-bold text-white">Fale Diretamente com a Gestão da NEXO</h3>
+        <p class="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto">
+          Dúvidas sobre como tratamos seus dados? Deseja revogar seu consentimento ou solicitar exclusão definitiva de registros? Estamos à sua inteira disposição.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
+          <a href="https://wa.me/5511970558412?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20gest%C3%A3o%20da%20NEXO%20sobre%20as%20pol%C3%ADticas%20de%20privacidade%20e%20cookies." target="_blank" rel="noopener noreferrer" class="btn-nexo-primary text-xs sm:text-sm py-3 px-6">
+            <span>Falar com Gestão da NEXO no WhatsApp ➔</span>
+          </a>
+          <button type="button" data-open-cookie-preferences class="btn-nexo-outline text-xs sm:text-sm py-3 px-6">
+            <span>Alterar Minhas Preferências de Cookies</span>
+          </button>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 5. RODAPÉ INSTITUCIONAL                                                   -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#06070B] border-t border-white/10 pt-12 pb-8 w-full px-6 sm:px-12 lg:px-20 xl:px-24 text-slate-400 mt-auto">
+    <div class="w-full">
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center bg-white/5 border border-white/10 p-1">
+            <img src="assets/images/nexo-icone.png" alt="NEXO" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <div class="text-white font-bold text-base">NEXO Tecnologia</div>
+            <div class="text-xs text-slate-500">Engenharia de Software, SaaS &amp; Ultra Luxo Digital</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm">
+          <a href="index.html" class="hover:text-white transition">Página Principal</a>
+          <span>•</span>
+          <a href="dossie.html" class="hover:text-white transition">Dossiê Técnico</a>
+          <span>•</span>
+          <button type="button" data-open-cookie-preferences class="hover:text-[#F37021] transition text-left">
+            Preferências de Cookies
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 NEXO Tecnologia. Todos os direitos reservados. Em conformidade com a LGPD (Lei nº 13.709/2018).
+        </div>
+        <div class="text-slate-300 font-bold">
+          Desenvolvido por NEXO Tecnologia
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 6. MODAL DE PREFERÊNCIAS DE COOKIES                                       -->
+  <!-- ========================================================================= -->
+  <div id="cookie-preferences-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden transition-opacity"></div>
+  <div id="cookie-preferences-modal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[94%] max-w-xl max-h-[90vh] overflow-y-auto bg-[#0E1322] border border-[#0A84FF]/40 rounded-3xl p-6 sm:p-8 z-50 hidden shadow-2xl">
+    
+    <div class="flex items-center justify-between pb-4 border-b border-white/10 sticky top-0 bg-[#0E1322]/95 backdrop-blur-sm z-10">
+      <div>
+        <span class="text-xs font-bold text-[#0A84FF] uppercase font-mono-tech">CENTRAL DE PRIVACIDADE LGPD</span>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">Preferências de Cookies &amp; Remarketing</h3>
+      </div>
+      <button id="cookie-modal-close" aria-label="Fechar Modal de Cookies" class="p-2 text-slate-400 hover:text-white transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="mt-6 space-y-5 text-xs sm:text-sm text-slate-300">
+      <p class="leading-relaxed">
+        Personalize quais categorias de cookies e tags de rastreamento você permite enquanto navega pela plataforma da NEXO Tecnologia:
+      </p>
+
+      <!-- Categoria 1: Necessários -->
+      <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-base">🔒</span>
+            <span class="font-bold text-white text-sm">Cookies Estritamente Necessários</span>
+          </div>
+          <span class="text-[11px] font-mono-tech uppercase font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">Sempre Ativos</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Essenciais para o tráfego seguro, verificação anti-robô, integridade de sessões e armazenamento de suas escolhas de privacidade. Não podem ser desativados.
+        </p>
+      </div>
+
+      <!-- Categoria 2: Analíticos -->
+      <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-base">📊</span>
+            <span class="font-bold text-white text-sm">Cookies Analíticos &amp; Desempenho</span>
+          </div>
+          <label class="cookie-switch relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="cookie-opt-analytics" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0A84FF]"></div>
+          </label>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Permitem mensurar o volume de acessos, calcular tempo de carregamento de páginas e mapear melhorias contínuas na arquitetura dos portais.
+        </p>
+      </div>
+
+      <!-- Categoria 3: Marketing e Remarketing -->
+      <div class="p-4 rounded-2xl bg-[#F37021]/10 border border-[#F37021]/30 space-y-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-base">🎯</span>
+            <span class="font-bold text-white text-sm">Cookies de Marketing &amp; Remarketing</span>
+          </div>
+          <label class="cookie-switch relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="cookie-opt-marketing" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#F37021]"></div>
+          </label>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Habilitam tags de remarketing (Meta Pixel, Google Ads, LinkedIn Ads) para que você receba convites exclusivos e anúncios relevantes sobre o ecossistema NEXO quando navegar em redes parceiras.
+        </p>
+      </div>
+
+      <div class="pt-4 flex flex-col sm:flex-row gap-3">
+        <button type="button" id="cookie-modal-save-custom" class="btn-nexo-primary flex-1 text-center py-3 text-xs sm:text-sm font-bold shadow-xl">
+          Salvar Minhas Escolhas
+        </button>
+        <button type="button" id="cookie-modal-accept-all" class="btn-nexo-outline flex-1 text-center py-3 text-xs sm:text-sm font-bold">
+          Aceitar Todos
+        </button>
+      </div>
+      <div class="text-center pt-1">
+        <button type="button" id="cookie-modal-reject-optional" class="text-xs text-slate-400 hover:text-white underline">
+          Rejeitar Cookies Opcionais (Apenas Necessários)
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 7. BANNER FLUTUANTE DE COOKIES (LGPD & REMARKETING)                       -->
+  <!-- ========================================================================= -->
+  <aside id="cookie-consent-banner" aria-label="Aviso de Cookies e Privacidade" class="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-6 md:left-auto md:right-8 md:max-w-xl z-50 hidden transition-all duration-500 ease-out">
+    <div class="glass-obsidian-card p-5 sm:p-6 rounded-3xl border border-[#0A84FF]/40 shadow-[0_20px_50px_rgba(0,0,0,0.85)] relative overflow-hidden backdrop-blur-2xl">
+      <div class="flex items-start gap-3.5">
+        <span class="text-2xl sm:text-3xl shrink-0 p-2 rounded-2xl bg-white/5 border border-white/10">🍪</span>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <h4 class="text-sm sm:text-base font-extrabold text-white">Privacidade, Cookies &amp; Remarketing</h4>
+            <span class="text-[10px] font-mono-tech uppercase font-bold text-[#0A84FF] bg-[#0A84FF]/10 px-2 py-0.5 rounded border border-[#0A84FF]/30">LGPD</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Utilizamos cookies necessários para navegação segura, métricas analíticas e <strong>tecnologias de remarketing</strong> para oferecer experiências e comunicações exclusivas do ecossistema NEXO. Você pode escolher quais autorizar.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-white/10 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3 text-xs">
+          <a href="politica-de-privacidade.html" class="text-slate-400 hover:text-white underline transition">Ler Política Completa</a>
+          <span class="text-slate-600">•</span>
+          <button type="button" data-open-cookie-preferences class="text-[#0A84FF] hover:underline font-bold transition">Personalizar</button>
+        </div>
+
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <button type="button" id="cookie-banner-reject" class="text-xs font-bold text-slate-400 hover:text-white px-3 py-2 rounded-xl border border-white/10 hover:bg-white/5 transition">
+            Apenas Necessários
+          </button>
+          <button type="button" id="cookie-banner-accept" class="btn-nexo-primary text-xs font-extrabold py-2 px-4 shadow-lg">
+            Aceitar Todos
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- 8. BOTÃO INTELIGENTE DE WHATSAPP                                          -->
+  <!-- ========================================================================= -->
+  <div id="whatsapp-widget" class="wa-widget" aria-label="Atendimento via WhatsApp">
+    <a id="wa-link" href="#" target="_blank" rel="noopener noreferrer" class="wa-btn" title="Falar com a gestão da NEXO no WhatsApp">
+      <div class="wa-icon-container">
+        <svg class="wa-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span id="wa-status-dot" class="wa-status-dot online"></span>
+      </div>
+      <div class="wa-text-box">
+        <span class="wa-title">NEXO Gestão VIP</span>
+        <span id="wa-status-text" class="wa-status-text">Online Agora</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Scripts Oficiais -->
+  <script src="js/main.js"></script>
+</body>
+</html>

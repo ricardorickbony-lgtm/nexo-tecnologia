@@ -20,10 +20,11 @@ A **NEXO Tecnologia** é a boutique oficial de software de alto padrão, desenvo
 
 ## 📂 Estrutura de Arquivos
 
-- `index.html` — Portal e Landing Page oficial com estética Quiet Luxury, logo transparente oficial, tabs interativas, simulador de produtividade e modal de demonstração VIP.
+- `index.html` — Portal e Landing Page oficial com estética Quiet Luxury, logo transparente oficial, tabs interativas, arsenal completo do CRM, simulador de produtividade, banner de consentimento de cookies e modal de demonstração VIP.
+- `politica-de-privacidade.html` — Políticas Oficiais de Privacidade e Gestão de Cookies da NEXO Tecnologia em conformidade com a LGPD (Lei nº 13.709/2018), com tabela de cookies e preparação para remarketing.
 - `dossie.html` — Dossiê executivo e técnico oficial para apresentação B2B, com formatação para impressão em PDF de alta qualidade.
-- `css/style.css` — Sistema de design de ultra luxo, glassmorphism, paleta oficial NEXO (Azul Cobalto `#0060B2` & Laranja `#F37021`) e regras Mobile First.
-- `js/main.js` — Lógica do botão inteligente de WhatsApp com horário em tempo real no número oficial **(11) 97055-8412**, simulador dinâmico de produtividade, acordeão de FAQ e drawer mobile.
+- `css/style.css` — Sistema de design de ultra luxo, glassmorphism, switches de cookies, paleta oficial NEXO (Azul Cobalto `#0060B2` & Laranja `#F37021`) e regras Mobile First.
+- `js/main.js` — Lógica do botão inteligente de WhatsApp no número oficial **(11) 97055-8412**, gestor de consentimento de cookies LGPD (Google Consent Mode v2 e Remarketing), simulador dinâmico de produtividade, acordeão de FAQ e drawer mobile.
 - `assets/images/` — Logotipos oficiais transparentes, ícones PWA e posters de vídeo.
 - `assets/videos/` — Vídeo de alta resolução para background contínuo (Terra global noturna com luzes de rede).
 - `favicon.ico`, `favicon.png`, `apple-touch-icon.png` — Ícones de navegação e atalhos móveis.

@@ -354,3 +354,31 @@ input[type=range]::-webkit-slider-thumb:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #F37021;
 }
+
+/* ==========================================================================
+   COOKIE CONSENT & REMARKETING BANNER
+   ========================================================================== */
+#cookie-consent-banner {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+#cookie-consent-banner.banner-visible {
+  display: block !important;
+  animation: cookieFadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cookieFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cookie-switch input:focus + div {
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.35);
+}
+

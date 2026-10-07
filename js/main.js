@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqAccordion();
   initVipDemoModal();
   initHeaderScrollEffect();
+  initCookieConsentManager();
 });
 
 /* ==========================================================================
@@ -277,4 +278,215 @@ function initHeaderScrollEffect() {
       header.classList.add("bg-[#090C14]/90");
     }
   });
+}
+
+/* ==========================================================================
+   8. GESTÃO DE COOKIES, LGPD & REMARKETING EM TEMPO REAL
+   ========================================================================== */
+function initCookieConsentManager() {
+  const STORAGE_KEY = "nexo_cookie_consent_v1";
+
+  const banner = document.getElementById("cookie-consent-banner");
+  const modal = document.getElementById("cookie-preferences-modal");
+  const backdrop = document.getElementById("cookie-preferences-backdrop");
+
+  const btnAcceptBanner = document.getElementById("cookie-banner-accept");
+  const btnRejectBanner = document.getElementById("cookie-banner-reject");
+
+  const btnModalClose = document.getElementById("cookie-modal-close");
+  const btnModalSave = document.getElementById("cookie-modal-save-custom");
+  const btnModalAcceptAll = document.getElementById("cookie-modal-accept-all");
+  const btnModalRejectOptional = document.getElementById("cookie-modal-reject-optional");
+
+  const optAnalytics = document.getElementById("cookie-opt-analytics");
+  const optMarketing = document.getElementById("cookie-opt-marketing");
+
+  // Gatilhos de abertura do modal (qualquer elemento com o atributo)
+  const openButtons = document.querySelectorAll("[data-open-cookie-preferences]");
+
+  function getSavedConsent() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEY);
+      return data ? JSON.parse(data) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveConsent(consent) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+    } catch (e) {
+      console.warn("NEXO: Falha ao gravar cookies no localStorage", e);
+    }
+    applyConsentSettings(consent);
+  }
+
+  function hideBanner() {
+    if (banner) {
+      banner.classList.remove("banner-visible");
+      setTimeout(() => {
+        banner.classList.add("hidden");
+      }, 400);
+    }
+  }
+
+  function showBanner() {
+    if (banner) {
+      banner.classList.remove("hidden");
+      // Pequeno timeout para disparo da animação fluida
+      setTimeout(() => {
+        banner.classList.add("banner-visible");
+      }, 50);
+    }
+  }
+
+  function openModal() {
+    const current = getSavedConsent() || { necessary: true, analytics: true, marketing: true };
+    if (optAnalytics) optAnalytics.checked = !!current.analytics;
+    if (optMarketing) optMarketing.checked = !!current.marketing;
+
+    if (modal && backdrop) {
+      modal.classList.remove("hidden");
+      backdrop.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closeModal() {
+    if (modal && backdrop) {
+      modal.classList.add("hidden");
+      backdrop.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+  }
+
+  function applyConsentSettings(consent) {
+    // 1. Google Consent Mode v2 (Pronto para GTM e Google Ads)
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        analytics_storage: consent.analytics ? "granted" : "denied",
+        ad_storage: consent.marketing ? "granted" : "denied",
+        ad_user_data: consent.marketing ? "granted" : "denied",
+        ad_personalization: consent.marketing ? "granted" : "denied"
+      });
+    }
+
+    // 2. Disparo de evento customizado para integrações externas (Meta Pixel, LinkedIn, etc.)
+    window.dispatchEvent(new CustomEvent("nexo:consent-updated", {
+      detail: consent
+    }));
+
+    // 3. Log executivo no console
+    console.info("NEXO Tecnologia • Consentimento atualizado:", consent);
+
+    // 4. Se o usuário aprovou marketing/remarketing, ativação de scripts sob demanda
+    if (consent.marketing) {
+      activateRemarketingTags();
+    }
+  }
+
+  function activateRemarketingTags() {
+    // Hook preparado para remarketing ativo (Meta Pixel, Google Ads, TikTok)
+    // Quando Ricardo/Gestão fornecer os IDs oficiais de Pixel das campanhas,
+    // os scripts serão injetados de forma assíncrona aqui sem bloquear o carregamento.
+    window.NEXO_REMARKETING_ACTIVE = true;
+  }
+
+  // --- Listeners de Eventos ---
+  openButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  if (btnModalClose) btnModalClose.addEventListener("click", closeModal);
+  if (backdrop) backdrop.addEventListener("click", closeModal);
+
+  // Ação Banner: Aceitar Todos
+  if (btnAcceptBanner) {
+    btnAcceptBanner.addEventListener("click", () => {
+      const consent = {
+        necessary: true,
+        analytics: true,
+        marketing: true,
+        timestamp: new Date().toISOString()
+      };
+      saveConsent(consent);
+      hideBanner();
+    });
+  }
+
+  // Ação Banner: Apenas Necessários
+  if (btnRejectBanner) {
+    btnRejectBanner.addEventListener("click", () => {
+      const consent = {
+        necessary: true,
+        analytics: false,
+        marketing: false,
+        timestamp: new Date().toISOString()
+      };
+      saveConsent(consent);
+      hideBanner();
+    });
+  }
+
+  // Ação Modal: Salvar Escolhas Customizadas
+  if (btnModalSave) {
+    btnModalSave.addEventListener("click", () => {
+      const consent = {
+        necessary: true,
+        analytics: optAnalytics ? optAnalytics.checked : false,
+        marketing: optMarketing ? optMarketing.checked : false,
+        timestamp: new Date().toISOString()
+      };
+      saveConsent(consent);
+      closeModal();
+      hideBanner();
+    });
+  }
+
+  // Ação Modal: Aceitar Todos
+  if (btnModalAcceptAll) {
+    btnModalAcceptAll.addEventListener("click", () => {
+      const consent = {
+        necessary: true,
+        analytics: true,
+        marketing: true,
+        timestamp: new Date().toISOString()
+      };
+      saveConsent(consent);
+      closeModal();
+      hideBanner();
+    });
+  }
+
+  // Ação Modal: Rejeitar Opcionais
+  if (btnModalRejectOptional) {
+    btnModalRejectOptional.addEventListener("click", () => {
+      if (optAnalytics) optAnalytics.checked = false;
+      if (optMarketing) optMarketing.checked = false;
+      const consent = {
+        necessary: true,
+        analytics: false,
+        marketing: false,
+        timestamp: new Date().toISOString()
+      };
+      saveConsent(consent);
+      closeModal();
+      hideBanner();
+    });
+  }
+
+  // --- Verificação Inicial ---
+  const saved = getSavedConsent();
+  if (saved) {
+    applyConsentSettings(saved);
+  } else {
+    // Exibe o banner suavemente após 1.2 segundos da primeira visita
+    setTimeout(() => {
+      showBanner();
+    }, 1200);
+  }
 }
