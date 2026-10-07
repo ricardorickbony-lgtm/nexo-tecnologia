@@ -105,30 +105,106 @@ function initMobileNavigation() {
 }
 
 /* ==========================================================================
-   3. ABAS DO ECOSSISTEMA NEXO
+   3. ABAS DO ECOSSISTEMA NEXO & NAVEGAÇÃO DE ÂNCORAS
    ========================================================================== */
-function initEcosystemTabs() {
+function activateEcosystemTab(targetId, shouldScroll = true) {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const tabPanels = document.querySelectorAll(".tab-panel");
+  const targetBtn = document.querySelector(`.tab-btn[data-target="${targetId}"]`);
 
+  if (!document.getElementById(targetId)) return;
+
+  // Atualiza botões
+  tabButtons.forEach(b => b.classList.remove("active"));
+  if (targetBtn) targetBtn.classList.add("active");
+
+  // Atualiza painéis
+  tabPanels.forEach(panel => {
+    if (panel.id === targetId) {
+      panel.classList.remove("hidden");
+      panel.classList.add("block");
+    } else {
+      panel.classList.add("hidden");
+      panel.classList.remove("block");
+    }
+  });
+
+  // Rolagem suave até a seção com compensação do cabeçalho
+  if (shouldScroll) {
+    const solucoesSection = document.getElementById("solucoes");
+    if (solucoesSection) {
+      const header = document.getElementById("main-header");
+      const headerHeight = header ? header.offsetHeight : 100;
+      const targetPos = solucoesSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+      window.scrollTo({
+        top: Math.max(0, targetPos),
+        behavior: "smooth"
+      });
+    }
+  }
+}
+
+function initEcosystemTabs() {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+
+  // Cliques manuais nos botões das abas
   tabButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-target");
-
-      tabButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      tabPanels.forEach(panel => {
-        if (panel.id === targetId) {
-          panel.classList.remove("hidden");
-          panel.classList.add("block");
-        } else {
-          panel.classList.add("hidden");
-          panel.classList.remove("block");
-        }
-      });
+      activateEcosystemTab(targetId, false);
     });
   });
+
+  // Mapeamento de âncoras para IDs das abas correspondentes
+  const tabAnchorMap = {
+    "#nexo-crm": "tab-crm",
+    "#tab-crm": "tab-crm",
+    "#sites-luxo": "tab-sites",
+    "#tab-sites": "tab-sites",
+    "#automacao-ia": "tab-ia",
+    "#tab-ia": "tab-ia"
+  };
+
+  // Intercepta todos os cliques em links de âncoras na página (navbar, menu mobile e rodapé)
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("a");
+    if (!link) return;
+
+    const href = link.getAttribute("href");
+    if (!href) return;
+
+    // 1. Caso seja link para uma das abas do ecossistema (#nexo-crm, #sites-luxo, #automacao-ia)
+    if (tabAnchorMap[href]) {
+      e.preventDefault();
+      activateEcosystemTab(tabAnchorMap[href], true);
+      try { history.pushState(null, null, href); } catch (err) {}
+      return;
+    }
+
+    // 2. Caso seja link para outra seção da página (#arsenal-crm, #produtividade, #planos, #faq, #solucoes, #diferenciais)
+    if (href.startsWith("#") && href.length > 1) {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        e.preventDefault();
+        const header = document.getElementById("main-header");
+        const headerHeight = header ? header.offsetHeight : 100;
+        const targetPos = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+        window.scrollTo({
+          top: Math.max(0, targetPos),
+          behavior: "smooth"
+        });
+        try { history.pushState(null, null, href); } catch (err) {}
+      }
+    }
+  });
+
+  // Trata acesso direto via URL com Hash (ex: index.html#sites-luxo ou index.html#automacao-ia)
+  const currentHash = window.location.hash;
+  if (currentHash && tabAnchorMap[currentHash]) {
+    setTimeout(() => {
+      activateEcosystemTab(tabAnchorMap[currentHash], true);
+    }, 200);
+  }
 }
 
 /* ==========================================================================
