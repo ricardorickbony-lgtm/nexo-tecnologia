@@ -1,40 +1,46 @@
 /* ==========================================================================
-   NEXO TECNOLOGIA — CSS OFICIAL DE ULTRA LUXO (PADRÃO 2026)
-   Estética: Quiet Luxury, Digital Lobby & Obsidian Gold
-   Desenvolvido para: Ricardo & Severino
+   NEXO TECNOLOGIA — CSS OFICIAL DE ULTRA LUXO (PALETA HOMOLOGADA NEXO)
+   Cores Oficiais: Azul Cobalto (#0060B2 / #0A84FF) & Laranja Vibrante (#F37021 / #FF7A1A)
+   Base: Obsidian Tech Night (#080A10 / #0C0F17)
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   1. VARIÁVEIS DE DESIGN & TOKENS DE LUXO
-   -------------------------------------------------------------------------- */
 :root {
-  --color-obsidian-950: #060709;
-  --color-obsidian-900: #090A0F;
-  --color-obsidian-850: #0E1017;
-  --color-obsidian-800: #141722;
-  --color-obsidian-700: #1B1F2D;
+  /* Fundo Obsidian & Midnight Tech */
+  --color-obsidian-950: #06070B;
+  --color-obsidian-900: #090C14;
+  --color-obsidian-850: #0D111D;
+  --color-obsidian-800: #131826;
+  --color-obsidian-700: #1B2236;
   --color-obsidian-border: rgba(255, 255, 255, 0.08);
 
-  --color-solar-gold: #FFE600;
-  --color-solar-hover: #FACC15;
-  --color-solar-dark: #D97706;
-  --color-solar-glow: rgba(255, 230, 0, 0.25);
+  /* Identidade Oficial NEXO: Laranja Sunset / Flame */
+  --color-nexo-orange: #F37021;
+  --color-nexo-orange-hover: #FF7A1A;
+  --color-nexo-orange-dark: #D45408;
+  --color-nexo-orange-glow: rgba(243, 112, 33, 0.35);
 
-  --color-emerald-500: #10B981;
-  --color-emerald-600: #059669;
+  /* Identidade Oficial NEXO: Azul Cobalto / Cyber Blue */
+  --color-nexo-blue: #0A84FF;
+  --color-nexo-blue-deep: #0060B2;
+  --color-nexo-blue-glow: rgba(10, 132, 255, 0.3);
 
+  /* WhatsApp Oficial */
+  --color-emerald-500: #25D366;
+  --color-emerald-600: #128C7E;
+
+  /* Textos */
   --color-text-primary: #FFFFFF;
-  --color-text-secondary: #E2E8F0;
+  --color-text-secondary: #F1F5F9;
   --color-text-muted: #94A3B8;
-  --color-text-dark: #0F172A;
 
+  /* Fontes */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   --radius-sm: 8px;
   --radius-md: 14px;
-  --radius-lg: 22px;
+  --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-full: 9999px;
 
@@ -44,7 +50,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   2. RESET E TIPOGRAFIA BASE
+   RESET & TIPOGRAFIA
    -------------------------------------------------------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -59,7 +65,6 @@ html {
   color: var(--color-text-primary);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -73,76 +78,65 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-solar-gold);
-  color: #000000;
+  background-color: var(--color-nexo-orange);
+  color: #FFFFFF;
 }
 
-/* --------------------------------------------------------------------------
-   3. TIPOGRAFIA EDITORIAL DE ALTA COSTURA
-   -------------------------------------------------------------------------- */
 .font-serif-luxury {
   font-family: var(--font-serif);
-  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .font-mono-tech {
   font-family: var(--font-mono);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #FFF9D2 0%, #FFE600 50%, #EAB308 100%);
+/* Gradientes Oficiais NEXO */
+.text-gradient-nexo {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FF8533 50%, #F37021 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-silver {
-  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 60%, #94A3B8 100%);
+.text-gradient-blue {
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 60%, #0A84FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* --------------------------------------------------------------------------
-   4. GLASSMORPHISM & EFEITOS VISUAIS OBSIDIAN
+   GLASSMORPHISM & CARDS OBSIDIAN
    -------------------------------------------------------------------------- */
 .glass-obsidian {
-  background: rgba(14, 16, 23, 0.75);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: rgba(13, 17, 29, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--color-obsidian-border);
 }
 
 .glass-obsidian-card {
-  background: linear-gradient(180deg, rgba(20, 23, 34, 0.8) 0%, rgba(10, 12, 17, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(19, 24, 38, 0.8) 0%, rgba(9, 12, 20, 0.95) 100%);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.5);
   transition: all var(--transition-normal);
 }
 
 .glass-obsidian-card:hover {
-  border-color: rgba(255, 230, 0, 0.35);
+  border-color: rgba(243, 112, 33, 0.45);
   transform: translateY(-4px);
-  box-shadow: 0 24px 50px -12px rgba(255, 230, 0, 0.08);
-}
-
-.solar-glow {
-  box-shadow: 0 0 25px rgba(255, 230, 0, 0.25);
-}
-
-.solar-glow:hover {
-  box-shadow: 0 0 35px rgba(255, 230, 0, 0.45);
+  box-shadow: 0 20px 50px -10px rgba(243, 112, 33, 0.12);
 }
 
 /* --------------------------------------------------------------------------
-   5. BOTÕES DE ALTA CONVERSÃO
+   BOTÕES DE ALTA CONVERSÃO NEXO
    -------------------------------------------------------------------------- */
-.btn-solar {
-  background-color: var(--color-solar-gold);
-  color: #060709;
+.btn-nexo-primary {
+  background: linear-gradient(135deg, #F37021 0%, #FF8024 100%);
+  color: #FFFFFF;
   font-weight: 800;
   letter-spacing: 0.02em;
-  padding: 14px 28px;
+  padding: 14px 30px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
@@ -150,23 +144,23 @@ body {
   gap: 10px;
   text-decoration: none;
   transition: all var(--transition-fast);
-  border: 1px solid rgba(255, 230, 0, 0.8);
-  box-shadow: 0 8px 24px rgba(255, 230, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 26px var(--color-nexo-orange-glow);
   cursor: pointer;
 }
 
-.btn-solar:hover {
-  background-color: #FFF04D;
+.btn-nexo-primary:hover {
+  background: linear-gradient(135deg, #FF7A1A 0%, #FF903D 100%);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(255, 230, 0, 0.38);
+  box-shadow: 0 12px 32px rgba(243, 112, 33, 0.5);
 }
 
-.btn-obsidian-outline {
+.btn-nexo-outline {
   background-color: rgba(255, 255, 255, 0.04);
   color: #FFFFFF;
   font-weight: 700;
   letter-spacing: 0.02em;
-  padding: 14px 28px;
+  padding: 14px 30px;
   border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
@@ -174,19 +168,19 @@ body {
   gap: 10px;
   text-decoration: none;
   transition: all var(--transition-fast);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
 }
 
-.btn-obsidian-outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 230, 0, 0.5);
-  color: var(--color-solar-gold);
+.btn-nexo-outline:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-color: var(--color-nexo-blue);
+  color: #38BDF8;
   transform: translateY(-2px);
 }
 
 /* --------------------------------------------------------------------------
-   6. COMPONENTE: BOTÃO INTELIGENTE DE WHATSAPP (PADRÃO OFICIAL)
+   BOTÃO INTELIGENTE DE WHATSAPP (HORÁRIO REAL)
    -------------------------------------------------------------------------- */
 .wa-widget {
   position: fixed;
@@ -200,19 +194,19 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #25d366;
-  color: #ffffff;
-  padding: 12px 20px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  padding: 12px 22px;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 18px rgba(37, 211, 102, 0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .wa-btn:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.55);
 }
 
 .wa-icon-container {
@@ -229,17 +223,17 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
 }
 
 .wa-status-dot.online {
-  background-color: #00ff66;
-  box-shadow: 0 0 8px #00ff66;
+  background-color: #00FF66;
+  box-shadow: 0 0 8px #00FF66;
   animation: pulse-green 2s infinite;
 }
 
 .wa-status-dot.offline {
-  background-color: #cbd5e1;
+  background-color: #CBD5E1;
   box-shadow: none;
 }
 
@@ -262,7 +256,7 @@ body {
 }
 
 .wa-btn.offline-mode {
-  background-color: #0f766e;
+  background-color: #0F766E;
 }
 
 @keyframes pulse-green {
@@ -280,35 +274,16 @@ body {
     display: none;
   }
   .wa-btn {
-    padding: 14px;
+    padding: 15px;
     border-radius: 50%;
   }
 }
 
 /* --------------------------------------------------------------------------
-   7. ANIMAÇÕES & ELEMENTOS INTERATIVOS
+   ABAS DO ECOSSISTEMA
    -------------------------------------------------------------------------- */
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-}
-
-.animate-float {
-  animation: floatSlow 6s ease-in-out infinite;
-}
-
-@keyframes pulseLight {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-
-.animate-pulse-subtle {
-  animation: pulseLight 4s ease-in-out infinite;
-}
-
-/* Tabs do Ecossistema */
 .tab-btn {
-  padding: 12px 24px;
+  padding: 12px 26px;
   font-weight: 700;
   font-size: 14px;
   border-radius: var(--radius-full);
@@ -322,21 +297,21 @@ body {
 
 .tab-btn:hover {
   color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .tab-btn.active {
-  color: #060709;
-  background-color: var(--color-solar-gold);
-  border-color: var(--color-solar-gold);
-  box-shadow: 0 4px 20px rgba(255, 230, 0, 0.3);
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #0A84FF 0%, #0060B2 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(10, 132, 255, 0.4);
 }
 
-/* Range Slider Customizado para Calculadora de ROI */
+/* Range Slider */
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   height: 8px;
   border-radius: 6px;
   outline: none;
@@ -348,10 +323,10 @@ input[type=range]::-webkit-slider-thumb {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--color-solar-gold);
+  background: var(--color-nexo-orange);
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(255, 230, 0, 0.6);
-  border: 2px solid #000000;
+  box-shadow: 0 0 14px rgba(243, 112, 33, 0.7);
+  border: 2px solid #FFFFFF;
   transition: transform 0.15s ease;
 }
 
@@ -359,21 +334,21 @@ input[type=range]::-webkit-slider-thumb:hover {
   transform: scale(1.15);
 }
 
-/* Barra de Rolagem Nobre */
+/* Barra de Rolagem */
 ::-webkit-scrollbar {
   width: 9px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #090A0F;
+  background: #090C14;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1E2333;
+  background: #1B2236;
   border-radius: 5px;
-  border: 2px solid #090A0F;
+  border: 2px solid #090C14;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFE600;
+  background: #F37021;
 }

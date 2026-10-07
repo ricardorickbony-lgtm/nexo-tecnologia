@@ -1,24 +1,25 @@
 /**
- * NEXO TECNOLOGIA — SCRIPTS OFICIAIS & INTERATIVIDADE DE ULTRA LUXO
- * Desenvolvido para: Ricardo & Severino (2026)
+ * NEXO TECNOLOGIA — SCRIPTS OFICIAIS & INTERATIVIDADE
+ * Atualizado com WhatsApp Oficial: (11) 97055-8412
+ * Desenvolvido por NEXO Tecnologia (2026)
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   initWhatsAppRealtimeStatus();
   initMobileNavigation();
   initEcosystemTabs();
-  initRoiCalculator();
+  initProductivityCalculator();
   initFaqAccordion();
   initVipDemoModal();
   initHeaderScrollEffect();
 });
 
 /* ==========================================================================
-   1. ATENDIMENTO WHATSAPP EM TEMPO REAL (PADRÃO RICARDO & SEVERINO)
+   1. ATENDIMENTO WHATSAPP EM TEMPO REAL COM HORÁRIO OFICIAL DO RICARDO
    ========================================================================== */
 function initWhatsAppRealtimeStatus() {
   const config = {
-    numero: "5511914879393", // WhatsApp Oficial do Ricardo / NEXO Tecnologia
+    numero: "5511970558412", // WhatsApp Oficial do Ricardo: (11) 97055-8412
     diasSemana: [1, 2, 3, 4, 5], // Seg a Sex
     horaInicio: 8,
     horaFim: 19,
@@ -49,16 +50,16 @@ function initWhatsAppRealtimeStatus() {
     if (isOnline) {
       dotEl.className = "wa-status-dot online";
       textEl.textContent = "Online Agora";
-      const msg = encodeURIComponent("Olá Ricardo! Estava navegando pelo site da NEXO Tecnologia e gostaria de agendar uma apresentação VIP.");
+      const msg = encodeURIComponent("Olá Ricardo! Estava navegando pelo site da NEXO Tecnologia e gostaria de agendar uma demonstração VIP.");
       linkEl.href = `https://wa.me/${config.numero}?text=${msg}`;
       if (headerStatusEl) {
-        headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Atendimento VIP Online`;
+        headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Atendimento VIP Online`;
       }
     } else {
       linkEl.classList.add("offline-mode");
       dotEl.className = "wa-status-dot offline";
       textEl.textContent = "Fora do Expediente";
-      const msg = encodeURIComponent("Olá Ricardo! Visitei o site da NEXO Tecnologia fora do horário e gostaria de deixar uma mensagem para retorno prioritário.");
+      const msg = encodeURIComponent("Olá Ricardo! Visitei o site da NEXO Tecnologia fora do horário comercial e gostaria de deixar uma mensagem para retorno prioritário.");
       linkEl.href = `https://wa.me/${config.numero}?text=${msg}`;
       if (headerStatusEl) {
         headerStatusEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-amber-400"></span> Retorno Prioritário às 08h`;
@@ -130,66 +131,55 @@ function initEcosystemTabs() {
 }
 
 /* ==========================================================================
-   4. CALCULADORA INTERATIVA DE ROI & ECONOMIA ANUAL
+   4. CALCULADORA DE GANHO DE PRODUTIVIDADE & VELOCIDADE (SEM EXPOR PREÇOS FIXOS)
    ========================================================================== */
-function initRoiCalculator() {
+function initProductivityCalculator() {
   const usersInput = document.getElementById("calc-users");
-  const costInput = document.getElementById("calc-cost");
+  const leadsInput = document.getElementById("calc-leads");
 
   const usersDisplay = document.getElementById("calc-users-val");
-  const costDisplay = document.getElementById("calc-cost-val");
+  const leadsDisplay = document.getElementById("calc-leads-val");
 
-  const savingAnnualDisplay = document.getElementById("calc-savings-annual");
-  const nexoCostMonthlyDisplay = document.getElementById("calc-nexo-cost");
-  const oldCostAnnualDisplay = document.getElementById("calc-old-annual");
   const hoursSavedDisplay = document.getElementById("calc-hours-saved");
+  const conversionBoostDisplay = document.getElementById("calc-conversion-boost");
+  const timeToLeadDisplay = document.getElementById("calc-time-to-lead");
 
-  function updateRoi() {
-    if (!usersInput || !costInput) return;
+  function updateProductivity() {
+    if (!usersInput || !leadsInput) return;
 
     const users = parseInt(usersInput.value, 10);
-    const oldCostPerUser = parseInt(costInput.value, 10);
+    const leads = parseInt(leadsInput.value, 10);
 
-    usersDisplay.textContent = users === 1 ? "1 usuário" : `${users} usuários`;
-    costDisplay.textContent = `R$ ${oldCostPerUser}/mês`;
+    usersDisplay.textContent = users === 1 ? "1 corretor/usuário" : `${users} corretores`;
+    leadsDisplay.textContent = `${leads} leads/mês`;
 
-    // Custo antigo anual da imobiliária
-    const oldMonthlyTotal = users * oldCostPerUser;
-    const oldAnnualTotal = oldMonthlyTotal * 12;
+    // Média de 18 horas de digitação manual e retrabalho salvas por corretor/mês
+    const hoursPerMonth = users * 18;
+    const hoursPerYear = hoursPerMonth * 12;
 
-    // Custo NEXO:
-    // 1-2 usuários: NEXO Start (R$ 100/mês)
-    // 3-6 usuários: NEXO Prime (R$ 150/mês)
-    // 7+ usuários: NEXO Pro (R$ 250/mês)
-    let nexoMonthly = 100;
-    if (users >= 3 && users <= 6) {
-      nexoMonthly = 150;
-    } else if (users > 6) {
-      nexoMonthly = 250;
-    }
+    // Estimativa de ganho em conversão com resposta imediata e simulador Caixa
+    let boostPercent = 35;
+    if (leads > 50) boostPercent = 48;
+    if (leads > 120) boostPercent = 65;
 
-    const nexoAnnualTotal = nexoMonthly * 12;
-    const annualSavings = Math.max(0, oldAnnualTotal - nexoAnnualTotal);
-    const hoursSavedPerYear = users * 18 * 12; // Média de 18 horas economizadas por corretor/mês com portabilidade e simulação instantânea
+    // Tempo de resposta ao lead cai de 4 horas para segundos
+    const timeSavedMin = "< 40 seg";
 
-    if (savingAnnualDisplay) {
-      savingAnnualDisplay.textContent = `R$ ${annualSavings.toLocaleString('pt-BR')}`;
-    }
-    if (nexoCostMonthlyDisplay) {
-      nexoCostMonthlyDisplay.textContent = `R$ ${nexoMonthly}/mês (Plano NEXO Fixo)`;
-    }
-    if (oldCostAnnualDisplay) {
-      oldCostAnnualDisplay.textContent = `R$ ${oldAnnualTotal.toLocaleString('pt-BR')}/ano`;
-    }
     if (hoursSavedDisplay) {
-      hoursSavedDisplay.textContent = `+${hoursSavedPerYear.toLocaleString('pt-BR')} horas`;
+      hoursSavedDisplay.textContent = `+${hoursPerYear.toLocaleString('pt-BR')} h/ano`;
+    }
+    if (conversionBoostDisplay) {
+      conversionBoostDisplay.textContent = `+${boostPercent}% mais conversões`;
+    }
+    if (timeToLeadDisplay) {
+      timeToLeadDisplay.textContent = timeSavedMin;
     }
   }
 
-  if (usersInput && costInput) {
-    usersInput.addEventListener("input", updateRoi);
-    costInput.addEventListener("input", updateRoi);
-    updateRoi();
+  if (usersInput && leadsInput) {
+    usersInput.addEventListener("input", updateProductivity);
+    leadsInput.addEventListener("input", updateProductivity);
+    updateProductivity();
   }
 }
 
@@ -208,7 +198,6 @@ function initFaqAccordion() {
       trigger.addEventListener("click", () => {
         const isOpen = !content.classList.contains("hidden");
 
-        // Fecha todos os outros
         faqItems.forEach(other => {
           const otherContent = other.querySelector(".faq-content");
           const otherIcon = other.querySelector(".faq-icon");
@@ -266,10 +255,10 @@ function initVipDemoModal() {
       const segmento = document.getElementById("modal-segmento")?.value || "Imobiliária / Corretor";
       const faturamento = document.getElementById("modal-tamanho")?.value || "Até 5 colaboradores";
 
-      const texto = `Olá Ricardo! Gostaria de agendar uma Demonstração VIP do Ecossistema NEXO Tecnologia:\n\n👤 *Nome:* ${nome}\n🏢 *Empresa:* ${empresa}\n🎯 *Segmento:* ${segmento}\n👥 *Equipe:* ${faturamento}\n\nPoderia me passar os próximos horários disponíveis?`;
+      const texto = `Olá Ricardo! Gostaria de agendar uma Demonstração VIP das soluções da NEXO Tecnologia:\n\n👤 *Nome:* ${nome}\n🏢 *Empresa:* ${empresa}\n🎯 *Segmento:* ${segmento}\n👥 *Equipe:* ${faturamento}\n\nPoderia me passar os próximos horários disponíveis?`;
 
       const encoded = encodeURIComponent(texto);
-      window.open(`https://wa.me/5511914879393?text=${encoded}`, "_blank");
+      window.open(`https://wa.me/5511970558412?text=${encoded}`, "_blank");
       closeModal();
     });
   }
@@ -284,11 +273,11 @@ function initHeaderScrollEffect() {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 40) {
-      header.classList.add("shadow-2xl", "border-b", "border-white/10", "bg-[#090A0F]/95");
-      header.classList.remove("bg-[#090A0F]/80");
+      header.classList.add("shadow-2xl", "border-b", "border-white/10", "bg-[#090C14]/95");
+      header.classList.remove("bg-[#090C14]/80");
     } else {
       header.classList.remove("shadow-2xl");
-      header.classList.add("bg-[#090A0F]/80");
+      header.classList.add("bg-[#090C14]/80");
     }
   });
 }
