@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initProductivityCalculator();
   initFaqAccordion();
   initVipDemoModal();
+  initClientPortalModal();
   initHeaderScrollEffect();
   initCookieConsentManager();
 });
@@ -334,6 +335,69 @@ function initVipDemoModal() {
       const encoded = encodeURIComponent(texto);
       window.open(`https://wa.me/5511970558412?text=${encoded}`, "_blank");
       closeModal();
+    });
+  }
+}
+
+/* ==========================================================================
+   6.5. PORTAL DO ASSINANTE / ÁREA EXECUTIVA
+   ========================================================================== */
+function initClientPortalModal() {
+  const modal = document.getElementById("client-portal-modal");
+  const backdrop = document.getElementById("client-portal-backdrop");
+  const openButtons = document.querySelectorAll(".open-client-portal-btn");
+  const closeBtn = document.getElementById("client-portal-close");
+  const form = document.getElementById("client-portal-form");
+  const feedbackMsg = document.getElementById("portal-feedback-msg");
+  const toDemoBtn = document.querySelector(".portal-to-demo-btn");
+
+  function openPortal() {
+    if (modal && backdrop) {
+      modal.classList.remove("hidden");
+      backdrop.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function closePortal() {
+    if (modal && backdrop) {
+      modal.classList.add("hidden");
+      backdrop.classList.add("hidden");
+      document.body.style.overflow = "";
+      if (feedbackMsg) feedbackMsg.classList.add("hidden");
+    }
+  }
+
+  openButtons.forEach(btn => btn.addEventListener("click", openPortal));
+  if (closeBtn) closeBtn.addEventListener("click", closePortal);
+  if (backdrop) backdrop.addEventListener("click", closePortal);
+
+  if (toDemoBtn) {
+    toDemoBtn.addEventListener("click", () => {
+      closePortal();
+      const vipModal = document.getElementById("vip-demo-modal");
+      const vipBackdrop = document.getElementById("vip-demo-backdrop");
+      if (vipModal && vipBackdrop) {
+        vipModal.classList.remove("hidden");
+        vipBackdrop.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  }
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const usuario = document.getElementById("portal-usuario")?.value || "Assinante";
+      if (feedbackMsg) {
+        feedbackMsg.classList.remove("hidden");
+        feedbackMsg.textContent = "Ambiente corporativo em verificação segura. Redirecionando para validação de terminal com o suporte executivo...";
+      }
+      setTimeout(() => {
+        const texto = `Olá! Sou cliente/assinante da NEXO Tecnologia (ou estou acessando a Área do Assinante com o identificador: ${usuario}) e gostaria de validar meu terminal de acesso.`;
+        window.open(`https://wa.me/5511970558412?text=${encodeURIComponent(texto)}`, "_blank");
+        closePortal();
+      }, 900);
     });
   }
 }
